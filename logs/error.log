@@ -6,3 +6,508 @@
 2020-04-21 18:50:48 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
 2020-04-22 16:07:32 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
 2020-04-22 17:51:08 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 09:45:24 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 09:46:26 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 09:47:08 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 09:47:23 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 09:58:29 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 09:58:30 Error: [Error] Class 'App\Controller\Configure' not found in /srv/http/galileu178.cat/lleida/src/Controller/AppController.php on line 45
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:210
+- ReflectionClass::newInstance() - [internal], line ??- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:56
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 09:59:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 09:59:39 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:00:02 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 10:16:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:16:44 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:16:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:16:51 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:18:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:18:16 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:18:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:18:17 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:18:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:18:18 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:18:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:18:19 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:18:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:18:19 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:18:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:18:20 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:18:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:18:20 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:19:32 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:19:33 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:19:33 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:19:34 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:19:34 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:19:35 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:19:35 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:19:35 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:19:38 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 10:19:39 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 10:19:55 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 20:20:02 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 20:28:34 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 20:28:36 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 20:28:36 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 20:30:02 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 20:30:06 Warning: DebugKit is disabling itself as your host `nas.galileu178.cat` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2020-04-23 20:33:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 20:33:36 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 20:33:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 20:33:40 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 20:35:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 20:35:36 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 20:35:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 20:35:37 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 20:35:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 20:35:37 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
+2020-04-23 20:35:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2020-04-23 20:35:38 Error: [Cake\Datasource\Exception\MissingDatasourceConfigException] The datasource configuration "debug_kit" was not found. in /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php on line 203
+Exception Attributes: array (
+  'name' => 'debug_kit',
+)
+Stack Trace:
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:209
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:66
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/galileu178.cat/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/galileu178.cat/lleida/webroot/index.php:40
+
+Request URL: /
+Client IP: 192.168.1.163
+
+
