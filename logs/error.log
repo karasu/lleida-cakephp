@@ -511,3 +511,34 @@ Request URL: /
 Client IP: 192.168.1.163
 
 
+2020-04-24 08:50:16 Error: [Cake\Http\Exception\MissingControllerException] Controller class Tutilaritats could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Tutilaritats',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /tutilaritats
+Client IP: 192.168.1.163
+
+
