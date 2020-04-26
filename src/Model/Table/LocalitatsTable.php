@@ -8,6 +8,9 @@ use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
+use \SplFileObject;
+use Cake\Datasource\Exception\RecordNotFoundException;
+
 /**
  * Localitats Model
  *

@@ -107,4 +107,16 @@ class ComarquesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    
+    public function import() {
+        if ($this->request->is('post')) {
+            $data = $this->request->getData();
+            if ($this->Comarques->import($data['csv']))
+            {
+                $this->Flash->success(__('All Comarques have been imported.'));
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('Comarques data could not be imported. Please, try again'));
+        }
+    }
 }

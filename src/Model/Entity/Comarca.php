@@ -26,6 +26,7 @@ class Comarca extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'delegacio_id' => true,
         'nom' => true,
         'delegacio' => true,

@@ -5,7 +5,10 @@
  */
 ?>
 <div class="delegacions index content">
-    <?= $this->Html->link(__('New Delegacio'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+    <div class="float-right">
+        <?= $this->Html->link(__('New Delegació'), ['action' => 'add'], ['class' => 'button']) ?>
+        <?= $this->Html->link(__('Import'), ['action' => 'import'], ['class' => 'button button-outline']) ?>
+    </div>
     <h3><?= __('Delegacions') ?></h3>
     <div class="table-responsive">
         <table>

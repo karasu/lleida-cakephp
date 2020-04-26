@@ -1,21 +1,21 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Naturalesa $naturalesa
+ * @var \App\Model\Entity\Comarca $comarca
  */
 ?>
 <div class="row">
     <aside class="column">
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('List Naturaleses'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('List Delegacions'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
-        <div class="naturaleses form content">
+        <div class="titularitats form content">
             <?= $this->Form->create(null, ['type' => 'file']) ?>
             <fieldset>
-                <legend><?= __('Choose CSV file to import Naturaleses') ?></legend>
+                <legend><?= __('Choose CSV file to import Comarques') ?></legend>
                 <input type="file" name="csv" />
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

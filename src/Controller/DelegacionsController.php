@@ -102,4 +102,15 @@ class DelegacionsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function import() {
+        if ($this->request->is('post')) {
+            $data = $this->request->getData();
+            if ($this->Delegacions->import($data['csv']))
+            {
+                $this->Flash->success(__('All Delegacions have been imported.'));
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('Delegacions data could not be imported. Please, try again'));
+        }
+    }
 }

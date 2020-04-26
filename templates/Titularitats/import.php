@@ -15,7 +15,7 @@
         <div class="titularitats form content">
             <?= $this->Form->create(null, ['type' => 'file']) ?>
             <fieldset>
-                <legend><?= __('Choose CSV file to import') ?></legend>
+                <legend><?= __('Choose CSV file to import Titularitats') ?></legend>
                 <input type="file" name="csv" />
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

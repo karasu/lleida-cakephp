@@ -35,6 +35,7 @@ $base_url = 'http://192.168.1.115:8765';
 
     <?= $this->Html->css('milligram.min.css') ?>
     <?= $this->Html->css('cake.css') ?>
+    <?= $this->Html->css('all.min.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -54,6 +55,10 @@ $base_url = 'http://192.168.1.115:8765';
         <div class="container">
             <?= $this->Flash->render() ?>
             <?= $this->fetch('content') ?>
+            <div class="float-right">
+                <br /><br />
+                <i class="fas fa-copyright"></i> La Intersindical CSC 2020. Tots els drets reservats.&nbsp;
+            </div>
         </div>
     </main>
     <footer>

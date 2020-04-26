@@ -2819,3 +2819,463 @@ Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
 
 
 
+2020-04-26 16:09:10 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::save() must implement interface Cake\Datasource\EntityInterface, null given, called in /srv/http/lleida/src/Model/Table/TitularitatsTable.php on line 132 in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 1806
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/TitularitatsTable.php:132
+- /srv/http/lleida/src/Controller/TitularitatsController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /titularitats/import
+Referer URL: http://192.168.1.115:8765/titularitats/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:09:10 Warning: Warning (512): Unable to emit headers. Headers sent in file=/srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php line=830 in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 71]
+Request URL: /titularitats/import
+Referer URL: http://192.168.1.115:8765/titularitats/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 16:09:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 168]
+Request URL: /titularitats/import
+Referer URL: http://192.168.1.115:8765/titularitats/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 16:09:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /titularitats/import
+Referer URL: http://192.168.1.115:8765/titularitats/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 16:09:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /titularitats/import
+Referer URL: http://192.168.1.115:8765/titularitats/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 16:35:03 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/all.css
+Referer URL: http://192.168.1.115:8765/delegacions
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:49:41 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/all.css
+Referer URL: http://192.168.1.115:8765/delegacions
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:49:41 Error: [Cake\Http\Exception\MissingControllerException] Controller class Js could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /js/all.js
+Referer URL: http://192.168.1.115:8765/delegacions
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:49:44 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/all.css
+Referer URL: http://192.168.1.115:8765/delegacions
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:49:45 Error: [Cake\Http\Exception\MissingControllerException] Controller class Js could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /js/all.js
+Referer URL: http://192.168.1.115:8765/delegacions
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:50:36 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/all.css
+Referer URL: http://192.168.1.115:8765/delegacions
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:51:21 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/all.css
+Referer URL: http://192.168.1.115:8765/delegacions
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:51:33 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/all.css
+Referer URL: http://192.168.1.115:8765/delegacions
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:51:33 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:53:14 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 16:53:27 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+

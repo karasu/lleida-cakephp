@@ -129,7 +129,7 @@ class TitularitatsTable extends Table
                 
                 $titularitat->nom = $nom;
 
-                if (!$this->save($naturalesa)) {
+                if (!$this->save($titularitat)) {
                     // No podem guardar el registre. Error!
                     $file = null;
                     return false;
