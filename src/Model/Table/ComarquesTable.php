@@ -49,7 +49,9 @@ class ComarquesTable extends Table
         $this->belongsTo('Delegacions', [
             'foreignKey' => 'delegacio_id',
             'joinType' => 'INNER',
+            'propertyName' => 'delegacio',
         ]);
+
     }
 
     /**

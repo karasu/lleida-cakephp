@@ -19,8 +19,8 @@
             <h3><?= h($comarca->id) ?></h3>
             <table>
                 <tr>
-                    <th><?= __('Delegacion') ?></th>
-                    <td><?= $comarca->has('delegacion') ? $this->Html->link($comarca->delegacio->id, ['controller' => 'Delegacions', 'action' => 'view', $comarca->delegacio->id]) : '' ?></td>
+                    <th><?= __('Delegació') ?></th>
+                    <td><?= $comarca->has('delegacio') ? $this->Html->link($comarca->delegacio->id, ['controller' => 'Delegacions', 'action' => 'view', $comarca->delegacio->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Nom') ?></th>

@@ -25,7 +25,7 @@
                 <?php foreach ($comarques as $comarca): ?>
                 <tr>
                     <td><?= $this->Number->format($comarca->id) ?></td>
-                    <td><?= $comarca->has('delegacio') ? $this->Html->link($comarca->delegacio->id, ['controller' => 'Delegacions', 'action' => 'view', $comarca->delegacio->id]) : '' ?></td>
+                    <td><?= $comarca->has('delegacio') ? $this->Html->link($comarca->delegacio->nom, ['controller' => 'Delegacions', 'action' => 'view', $comarca->delegacio->id]) : '' ?></td>
                     <td><?= h($comarca->nom) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $comarca->id]) ?>
