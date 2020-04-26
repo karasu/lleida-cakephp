@@ -1,0 +1,4 @@
+config/app_local.php
+logs/*
+tmp/*
+
