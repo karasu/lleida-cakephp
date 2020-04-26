@@ -25,6 +25,7 @@ class Titularitat extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'nom' => true,
         'centres' => true,
     ];

@@ -14,7 +14,10 @@
  * @var \App\View\AppView $this
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Lleida: Informació dels Centres Educatius - Intersindical-CSC';
+#$base_url = 'https://nas.galileu178.cat/lleida';
+$base_url = 'http://192.168.1.115:8765';
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,11 +43,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <body>
     <nav class="top-nav">
         <div class="top-nav-title">
-            <a href="/"><span>Cake</span>PHP</a>
+            <a href="/"><span>"Lleida"</span> - Intersindical-CSC</a>
         </div>
         <div class="top-nav-links">
-            <a target="_blank" href="https://book.cakephp.org/4/">Documentation</a>
-            <a target="_blank" href="https://api.cakephp.org/4/">API</a>
+            <a target="_blank" href="<?= $base_url ?>/Centres/">Veure tots els centres de Catalunya</a>
+            <!--<a target="_blank" href="https://api.cakephp.org/4/">API</a>-->
         </div>
     </nav>
     <main class="main">

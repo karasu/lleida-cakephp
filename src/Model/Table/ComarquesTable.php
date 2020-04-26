@@ -13,19 +13,19 @@ use Cake\Validation\Validator;
  *
  * @property \App\Model\Table\DelegacionsTable&\Cake\ORM\Association\BelongsTo $Delegacions
  *
- * @method \App\Model\Entity\Comarque newEmptyEntity()
- * @method \App\Model\Entity\Comarque newEntity(array $data, array $options = [])
- * @method \App\Model\Entity\Comarque[] newEntities(array $data, array $options = [])
- * @method \App\Model\Entity\Comarque get($primaryKey, $options = [])
- * @method \App\Model\Entity\Comarque findOrCreate($search, ?callable $callback = null, $options = [])
- * @method \App\Model\Entity\Comarque patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \App\Model\Entity\Comarque[] patchEntities(iterable $entities, array $data, array $options = [])
- * @method \App\Model\Entity\Comarque|false save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\Comarque saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\Comarque[]|\Cake\Datasource\ResultSetInterface|false saveMany(iterable $entities, $options = [])
- * @method \App\Model\Entity\Comarque[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
- * @method \App\Model\Entity\Comarque[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
- * @method \App\Model\Entity\Comarque[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Comarca newEmptyEntity()
+ * @method \App\Model\Entity\Comarca newEntity(array $data, array $options = [])
+ * @method \App\Model\Entity\Comarca[] newEntities(array $data, array $options = [])
+ * @method \App\Model\Entity\Comarca get($primaryKey, $options = [])
+ * @method \App\Model\Entity\Comarca findOrCreate($search, ?callable $callback = null, $options = [])
+ * @method \App\Model\Entity\Comarca patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \App\Model\Entity\Comarca[] patchEntities(iterable $entities, array $data, array $options = [])
+ * @method \App\Model\Entity\Comarca|false save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Comarca saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Comarca[]|\Cake\Datasource\ResultSetInterface|false saveMany(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Comarca[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Comarca[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Comarca[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
  */
 class ComarquesTable extends Table
 {

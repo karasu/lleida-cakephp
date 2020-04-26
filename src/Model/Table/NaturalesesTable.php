@@ -8,22 +8,25 @@ use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
+use \SplFileObject;
+use Cake\Datasource\Exception\RecordNotFoundException;
+
 /**
  * Naturaleses Model
  *
- * @method \App\Model\Entity\Naturalese newEmptyEntity()
- * @method \App\Model\Entity\Naturalese newEntity(array $data, array $options = [])
- * @method \App\Model\Entity\Naturalese[] newEntities(array $data, array $options = [])
- * @method \App\Model\Entity\Naturalese get($primaryKey, $options = [])
- * @method \App\Model\Entity\Naturalese findOrCreate($search, ?callable $callback = null, $options = [])
- * @method \App\Model\Entity\Naturalese patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \App\Model\Entity\Naturalese[] patchEntities(iterable $entities, array $data, array $options = [])
- * @method \App\Model\Entity\Naturalese|false save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\Naturalese saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\Naturalese[]|\Cake\Datasource\ResultSetInterface|false saveMany(iterable $entities, $options = [])
- * @method \App\Model\Entity\Naturalese[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
- * @method \App\Model\Entity\Naturalese[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
- * @method \App\Model\Entity\Naturalese[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Naturalesa newEmptyEntity()
+ * @method \App\Model\Entity\Naturalesa newEntity(array $data, array $options = [])
+ * @method \App\Model\Entity\Naturalesa[] newEntities(array $data, array $options = [])
+ * @method \App\Model\Entity\Naturalesa get($primaryKey, $options = [])
+ * @method \App\Model\Entity\Naturalesa findOrCreate($search, ?callable $callback = null, $options = [])
+ * @method \App\Model\Entity\Naturalesa patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \App\Model\Entity\Naturalesa[] patchEntities(iterable $entities, array $data, array $options = [])
+ * @method \App\Model\Entity\Naturalesa|false save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Naturalesa saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Naturalesa[]|\Cake\Datasource\ResultSetInterface|false saveMany(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Naturalesa[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Naturalesa[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Naturalesa[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
  */
 class NaturalesesTable extends Table
 {
@@ -76,5 +79,58 @@ class NaturalesesTable extends Table
         $rules->add($rules->isUnique(['nom']));
 
         return $rules;
+    }
+
+    public function import($uploadedFile) : bool
+    {
+        // Check that the upload was ok and the uploaded file is a csv one
+        if ($uploadedFile->getError() != 0 || $uploadedFile->getClientMediaType() != 'text/csv')
+        {
+            return false;
+        }
+
+        // move file
+        $filename = '/tmp/lleida-import.csv';
+        $uploadedFile->moveTo($filename);
+
+        // open file
+        $file = new SplFileObject($filename);
+        $file->setFlags(SplFileObject::READ_CSV | SplFileObject::READ_AHEAD | SplFileObject::SKIP_EMPTY | SplFileObject::DROP_NEW_LINE);
+        $file->setCsvControl(';');
+
+        $header = $file->fgetcsv();
+
+        while (!$file->eof()) {
+            $row = $file->fgetcsv();
+            // for each header field 
+ 			foreach ($header as $k=>$head) {
+                $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
+                if ($head == 'Codi naturalesa' && isset($row[$k])) {
+                    $id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
+                }
+                else if ($head == 'Nom naturalesa' && isset($row[$k])) {
+                   $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                }
+            }
+
+            if (isset($id) && isset($nom)) {              
+                try {
+                    $naturalesa = $this->get($id);
+                } catch (RecordNotFoundException $e) {
+                    $naturalesa = $this->newEmptyEntity();
+                    $naturalesa->id = $id;
+                }
+                
+                $naturalesa->nom = $nom;
+
+                if (!$this->save($naturalesa)) {
+                    // No podem guardar el registre. Error!
+                    $file = null;
+                    return false;
+                }
+            }
+        }
+        $file = null;
+        return true;
     }
 }

@@ -1,11 +1,11 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Delegacion[]|\Cake\Collection\CollectionInterface $delegacions
+ * @var \App\Model\Entity\Delegacio[]|\Cake\Collection\CollectionInterface $delegacions
  */
 ?>
 <div class="delegacions index content">
-    <?= $this->Html->link(__('New Delegacion'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+    <?= $this->Html->link(__('New Delegacio'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Delegacions') ?></h3>
     <div class="table-responsive">
         <table>
@@ -17,14 +17,14 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($delegacions as $delegacion): ?>
+                <?php foreach ($delegacions as $delegacio): ?>
                 <tr>
-                    <td><?= $this->Number->format($delegacion->id) ?></td>
-                    <td><?= h($delegacion->nom) ?></td>
+                    <td><?= $this->Number->format($delegacio->id) ?></td>
+                    <td><?= h($delegacio->nom) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $delegacion->id]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $delegacion->id]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $delegacion->id], ['confirm' => __('Are you sure you want to delete # {0}?', $delegacion->id)]) ?>
+                        <?= $this->Html->link(__('View'), ['action' => 'view', $delegacio->id]) ?>
+                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $delegacio->id]) ?>
+                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $delegacio->id], ['confirm' => __('Are you sure you want to delete # {0}?', $delegacio->id)]) ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>

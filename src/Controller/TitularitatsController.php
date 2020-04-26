@@ -102,4 +102,17 @@ class TitularitatsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function import() {
+        if ($this->request->is('post')) {
+            $data = $this->request->getData();
+            if ($this->Titularitats->import($data['csv']))
+            {
+                $this->Flash->success(__('All titularitats have been imported.'));
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('Titularitats could not be imported. Please, try again'));
+        }
+    }
+
 }

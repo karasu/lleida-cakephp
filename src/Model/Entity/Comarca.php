@@ -6,15 +6,15 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Comarque Entity
+ * Comarca Entity
  *
  * @property int $id
  * @property int $delegacio_id
  * @property string $nom
  *
- * @property \App\Model\Entity\Delegacion $delegacion
+ * @property \App\Model\Entity\Delegacio $delegacio
  */
-class Comarque extends Entity
+class Comarca extends Entity
 {
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -28,6 +28,6 @@ class Comarque extends Entity
     protected $_accessible = [
         'delegacio_id' => true,
         'nom' => true,
-        'delegacion' => true,
+        'delegacio' => true,
     ];
 }

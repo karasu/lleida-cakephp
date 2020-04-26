@@ -1,7 +1,7 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Comarque $comarque
+ * @var \App\Model\Entity\Comarca $comarca
  */
 ?>
 <div class="row">
@@ -10,17 +10,17 @@
             <h4 class="heading"><?= __('Actions') ?></h4>
             <?= $this->Form->postLink(
                 __('Delete'),
-                ['action' => 'delete', $comarque->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $comarque->id), 'class' => 'side-nav-item']
+                ['action' => 'delete', $comarca->id],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $comarca->id), 'class' => 'side-nav-item']
             ) ?>
             <?= $this->Html->link(__('List Comarques'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
         <div class="comarques form content">
-            <?= $this->Form->create($comarque) ?>
+            <?= $this->Form->create($comarca) ?>
             <fieldset>
-                <legend><?= __('Edit Comarque') ?></legend>
+                <legend><?= __('Edit Comarca') ?></legend>
                 <?php
                     echo $this->Form->control('delegacio_id', ['options' => $delegacions]);
                     echo $this->Form->control('nom');

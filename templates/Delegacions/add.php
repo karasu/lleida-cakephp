@@ -1,7 +1,7 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Delegacion $delegacion
+ * @var \App\Model\Entity\Delegacio $delegacion
  */
 ?>
 <div class="row">
@@ -13,9 +13,9 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="delegacions form content">
-            <?= $this->Form->create($delegacion) ?>
+            <?= $this->Form->create($delegacio) ?>
             <fieldset>
-                <legend><?= __('Add Delegacion') ?></legend>
+                <legend><?= __('Add Delegacio') ?></legend>
                 <?php
                     echo $this->Form->control('nom');
                 ?>

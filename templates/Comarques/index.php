@@ -1,11 +1,11 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Comarque[]|\Cake\Collection\CollectionInterface $comarques
+ * @var \App\Model\Entity\Comarca[]|\Cake\Collection\CollectionInterface $comarques
  */
 ?>
 <div class="comarques index content">
-    <?= $this->Html->link(__('New Comarque'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+    <?= $this->Html->link(__('New Comarca'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Comarques') ?></h3>
     <div class="table-responsive">
         <table>
@@ -18,15 +18,15 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($comarques as $comarque): ?>
+                <?php foreach ($comarques as $comarca): ?>
                 <tr>
-                    <td><?= $this->Number->format($comarque->id) ?></td>
-                    <td><?= $comarque->has('delegacion') ? $this->Html->link($comarque->delegacion->id, ['controller' => 'Delegacions', 'action' => 'view', $comarque->delegacion->id]) : '' ?></td>
-                    <td><?= h($comarque->nom) ?></td>
+                    <td><?= $this->Number->format($comarca->id) ?></td>
+                    <td><?= $comarca->has('delegacio') ? $this->Html->link($comarca->delegacio->id, ['controller' => 'Delegacions', 'action' => 'view', $comarca->delegacio->id]) : '' ?></td>
+                    <td><?= h($comarca->nom) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $comarque->id]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $comarque->id]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $comarque->id], ['confirm' => __('Are you sure you want to delete # {0}?', $comarque->id)]) ?>
+                        <?= $this->Html->link(__('View'), ['action' => 'view', $comarca->id]) ?>
+                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $comarca->id]) ?>
+                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $comarca->id], ['confirm' => __('Are you sure you want to delete # {0}?', $comarca->id)]) ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>

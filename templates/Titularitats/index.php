@@ -5,7 +5,10 @@
  */
 ?>
 <div class="titularitats index content">
-    <?= $this->Html->link(__('New Titularitat'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+    <div class="float-right">
+        <?= $this->Html->link(__('New Titularitat'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+        <?= $this->Html->link(__('Import'), ['action' => 'import'], ['class' => 'button button-outline']) ?>
+    </div>
     <h3><?= __('Titularitats') ?></h3>
     <div class="table-responsive">
         <table>

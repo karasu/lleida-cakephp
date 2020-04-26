@@ -1,7 +1,7 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Naturalese $naturalese
+ * @var \App\Model\Entity\Naturalesa $naturalesa
  */
 ?>
 <div class="row">
@@ -13,9 +13,9 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="naturaleses form content">
-            <?= $this->Form->create($naturalese) ?>
+            <?= $this->Form->create($naturalesa) ?>
             <fieldset>
-                <legend><?= __('Add Naturalese') ?></legend>
+                <legend><?= __('Add Naturalesa') ?></legend>
                 <?php
                     echo $this->Form->control('nom');
                 ?>

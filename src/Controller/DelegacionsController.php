@@ -7,7 +7,7 @@ namespace App\Controller;
  * Delegacions Controller
  *
  * @property \App\Model\Table\DelegacionsTable $Delegacions
- * @method \App\Model\Entity\Delegacion[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
+ * @method \App\Model\Entity\Delegacio[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class DelegacionsController extends AppController
 {
@@ -26,17 +26,17 @@ class DelegacionsController extends AppController
     /**
      * View method
      *
-     * @param string|null $id Delegacion id.
+     * @param string|null $id Delegacio id.
      * @return \Cake\Http\Response|null|void Renders view
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function view($id = null)
     {
-        $delegacion = $this->Delegacions->get($id, [
+        $delegacio = $this->Delegacions->get($id, [
             'contain' => [],
         ]);
 
-        $this->set('delegacion', $delegacion);
+        $this->set('delegacio', $delegacio);
     }
 
     /**
@@ -46,58 +46,58 @@ class DelegacionsController extends AppController
      */
     public function add()
     {
-        $delegacion = $this->Delegacions->newEmptyEntity();
+        $delegacio = $this->Delegacions->newEmptyEntity();
         if ($this->request->is('post')) {
-            $delegacion = $this->Delegacions->patchEntity($delegacion, $this->request->getData());
-            if ($this->Delegacions->save($delegacion)) {
-                $this->Flash->success(__('The delegacion has been saved.'));
+            $delegacio = $this->Delegacions->patchEntity($delegacio, $this->request->getData());
+            if ($this->Delegacions->save($delegacio)) {
+                $this->Flash->success(__('The delegacio has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The delegacion could not be saved. Please, try again.'));
+            $this->Flash->error(__('The delegacio could not be saved. Please, try again.'));
         }
-        $this->set(compact('delegacion'));
+        $this->set(compact('delegacio'));
     }
 
     /**
      * Edit method
      *
-     * @param string|null $id Delegacion id.
+     * @param string|null $id Delegacio id.
      * @return \Cake\Http\Response|null|void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function edit($id = null)
     {
-        $delegacion = $this->Delegacions->get($id, [
+        $delegacio = $this->Delegacions->get($id, [
             'contain' => [],
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $delegacion = $this->Delegacions->patchEntity($delegacion, $this->request->getData());
-            if ($this->Delegacions->save($delegacion)) {
-                $this->Flash->success(__('The delegacion has been saved.'));
+            $delegacio = $this->Delegacions->patchEntity($delegacio, $this->request->getData());
+            if ($this->Delegacions->save($delegacio)) {
+                $this->Flash->success(__('The delegacio has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The delegacion could not be saved. Please, try again.'));
+            $this->Flash->error(__('The delegacio could not be saved. Please, try again.'));
         }
-        $this->set(compact('delegacion'));
+        $this->set(compact('delegacio'));
     }
 
     /**
      * Delete method
      *
-     * @param string|null $id Delegacion id.
+     * @param string|null $id Delegacio id.
      * @return \Cake\Http\Response|null|void Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $delegacion = $this->Delegacions->get($id);
-        if ($this->Delegacions->delete($delegacion)) {
-            $this->Flash->success(__('The delegacion has been deleted.'));
+        $delegacio = $this->Delegacions->get($id);
+        if ($this->Delegacions->delete($delegacio)) {
+            $this->Flash->success(__('The delegacio has been deleted.'));
         } else {
-            $this->Flash->error(__('The delegacion could not be deleted. Please, try again.'));
+            $this->Flash->error(__('The delegacio could not be deleted. Please, try again.'));
         }
 
         return $this->redirect(['action' => 'index']);

@@ -7,7 +7,7 @@ namespace App\Controller;
  * Comarques Controller
  *
  * @property \App\Model\Table\ComarquesTable $Comarques
- * @method \App\Model\Entity\Comarque[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
+ * @method \App\Model\Entity\Comarca[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class ComarquesController extends AppController
 {
@@ -29,17 +29,17 @@ class ComarquesController extends AppController
     /**
      * View method
      *
-     * @param string|null $id Comarque id.
+     * @param string|null $id Comarca id.
      * @return \Cake\Http\Response|null|void Renders view
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function view($id = null)
     {
-        $comarque = $this->Comarques->get($id, [
+        $comarca = $this->Comarques->get($id, [
             'contain' => ['Delegacions'],
         ]);
 
-        $this->set('comarque', $comarque);
+        $this->set('comarca', $comarca);
     }
 
     /**
@@ -49,18 +49,18 @@ class ComarquesController extends AppController
      */
     public function add()
     {
-        $comarque = $this->Comarques->newEmptyEntity();
+        $comarca = $this->Comarques->newEmptyEntity();
         if ($this->request->is('post')) {
-            $comarque = $this->Comarques->patchEntity($comarque, $this->request->getData());
-            if ($this->Comarques->save($comarque)) {
-                $this->Flash->success(__('The comarque has been saved.'));
+            $comarca = $this->Comarques->patchEntity($comarca, $this->request->getData());
+            if ($this->Comarques->save($comarca)) {
+                $this->Flash->success(__('The comarca has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The comarque could not be saved. Please, try again.'));
+            $this->Flash->error(__('The comarca could not be saved. Please, try again.'));
         }
         $delegacions = $this->Comarques->Delegacions->find('list', ['limit' => 200]);
-        $this->set(compact('comarque', 'delegacions'));
+        $this->set(compact('comarca', 'delegacions'));
     }
 
     /**
@@ -72,37 +72,37 @@ class ComarquesController extends AppController
      */
     public function edit($id = null)
     {
-        $comarque = $this->Comarques->get($id, [
+        $comarca = $this->Comarques->get($id, [
             'contain' => [],
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $comarque = $this->Comarques->patchEntity($comarque, $this->request->getData());
-            if ($this->Comarques->save($comarque)) {
-                $this->Flash->success(__('The comarque has been saved.'));
+            $comarca = $this->Comarques->patchEntity($comarca, $this->request->getData());
+            if ($this->Comarques->save($comarca)) {
+                $this->Flash->success(__('The comarca has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The comarque could not be saved. Please, try again.'));
+            $this->Flash->error(__('The comarca could not be saved. Please, try again.'));
         }
         $delegacions = $this->Comarques->Delegacions->find('list', ['limit' => 200]);
-        $this->set(compact('comarque', 'delegacions'));
+        $this->set(compact('comarca', 'delegacions'));
     }
 
     /**
      * Delete method
      *
-     * @param string|null $id Comarque id.
+     * @param string|null $id Comarca id.
      * @return \Cake\Http\Response|null|void Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $comarque = $this->Comarques->get($id);
-        if ($this->Comarques->delete($comarque)) {
-            $this->Flash->success(__('The comarque has been deleted.'));
+        $comarca = $this->Comarques->get($id);
+        if ($this->Comarques->delete($comarca)) {
+            $this->Flash->success(__('The comarca has been deleted.'));
         } else {
-            $this->Flash->error(__('The comarque could not be deleted. Please, try again.'));
+            $this->Flash->error(__('The comarca could not be deleted. Please, try again.'));
         }
 
         return $this->redirect(['action' => 'index']);

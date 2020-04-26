@@ -8,6 +8,9 @@ use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
+use \SplFileObject;
+use Cake\Datasource\Exception\RecordNotFoundException;
+
 /**
  * Titularitats Model
  *
@@ -82,5 +85,58 @@ class TitularitatsTable extends Table
         $rules->add($rules->isUnique(['nom']));
 
         return $rules;
+    }
+
+    public function import($uploadedFile) : bool
+    {
+        // Check that the upload was ok and the uploaded file is a csv one
+        if ($uploadedFile->getError() != 0 || $uploadedFile->getClientMediaType() != 'text/csv')
+        {
+            return false;
+        }
+
+        // move file
+        $filename = '/tmp/lleida-import.csv';
+        $uploadedFile->moveTo($filename);
+
+        // open file
+        $file = new SplFileObject($filename);
+        $file->setFlags(SplFileObject::READ_CSV | SplFileObject::READ_AHEAD | SplFileObject::SKIP_EMPTY | SplFileObject::DROP_NEW_LINE);
+        $file->setCsvControl(';');
+
+        $header = $file->fgetcsv();
+
+        while (!$file->eof()) {
+            $row = $file->fgetcsv();
+            // for each header field 
+ 			foreach ($header as $k=>$head) {
+                $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
+                if ($head == 'Codi titularitat' && isset($row[$k])) {
+                    $id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
+                }
+                else if ($head == 'Nom titularitat' && isset($row[$k])) {
+                   $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                }
+            }
+
+            if (isset($id) && isset($nom)) {              
+                try {
+                    $titularitat = $this->get($id);
+                } catch (RecordNotFoundException $e) {
+                    $titularitat = $this->newEmptyEntity();
+                    $titularitat->id = $id;
+                }
+                
+                $titularitat->nom = $nom;
+
+                if (!$this->save($naturalesa)) {
+                    // No podem guardar el registre. Error!
+                    $file = null;
+                    return false;
+                }
+            }
+        }
+        $file = null;
+        return true;
     }
 }

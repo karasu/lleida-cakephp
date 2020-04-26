@@ -11,19 +11,19 @@ use Cake\Validation\Validator;
 /**
  * Delegacions Model
  *
- * @method \App\Model\Entity\Delegacion newEmptyEntity()
- * @method \App\Model\Entity\Delegacion newEntity(array $data, array $options = [])
- * @method \App\Model\Entity\Delegacion[] newEntities(array $data, array $options = [])
- * @method \App\Model\Entity\Delegacion get($primaryKey, $options = [])
- * @method \App\Model\Entity\Delegacion findOrCreate($search, ?callable $callback = null, $options = [])
- * @method \App\Model\Entity\Delegacion patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \App\Model\Entity\Delegacion[] patchEntities(iterable $entities, array $data, array $options = [])
- * @method \App\Model\Entity\Delegacion|false save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\Delegacion saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\Delegacion[]|\Cake\Datasource\ResultSetInterface|false saveMany(iterable $entities, $options = [])
- * @method \App\Model\Entity\Delegacion[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
- * @method \App\Model\Entity\Delegacion[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
- * @method \App\Model\Entity\Delegacion[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Delegacio newEmptyEntity()
+ * @method \App\Model\Entity\Delegacio newEntity(array $data, array $options = [])
+ * @method \App\Model\Entity\Delegacio[] newEntities(array $data, array $options = [])
+ * @method \App\Model\Entity\Delegacio get($primaryKey, $options = [])
+ * @method \App\Model\Entity\Delegacio findOrCreate($search, ?callable $callback = null, $options = [])
+ * @method \App\Model\Entity\Delegacio patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \App\Model\Entity\Delegacio[] patchEntities(iterable $entities, array $data, array $options = [])
+ * @method \App\Model\Entity\Delegacio|false save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Delegacio saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\Delegacio[]|\Cake\Datasource\ResultSetInterface|false saveMany(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Delegacio[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Delegacio[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
+ * @method \App\Model\Entity\Delegacio[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
  */
 class DelegacionsTable extends Table
 {

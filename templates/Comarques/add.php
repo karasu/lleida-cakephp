@@ -1,7 +1,7 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Comarque $comarque
+ * @var \App\Model\Entity\Comarca $comarca
  */
 ?>
 <div class="row">
@@ -13,9 +13,9 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="comarques form content">
-            <?= $this->Form->create($comarque) ?>
+            <?= $this->Form->create($comarca) ?>
             <fieldset>
-                <legend><?= __('Add Comarque') ?></legend>
+                <legend><?= __('Add Comarca') ?></legend>
                 <?php
                     echo $this->Form->control('delegacio_id', ['options' => $delegacions]);
                     echo $this->Form->control('nom');

@@ -542,3 +542,2280 @@ Request URL: /tutilaritats
 Client IP: 192.168.1.163
 
 
+2020-04-24 12:11:31 Error: [Cake\Http\Exception\MissingControllerException] Controller class Lleida could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Lleida',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /lleida/Centres/
+Referer URL: http://192.168.1.115:8765/centres
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:22:24 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:24:22 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:24:36 Error: [Cake\View\Exception\MissingTemplateException] Template file `Naturaleses/import.php` could not be found.
+
+The following paths were searched:
+
+- `/srv/http/lleida/templates/Naturaleses/import.php`
+- `/srv/http/lleida/vendor/cakephp/cakephp/templates/Naturaleses/import.php`
+ in Naturaleses/import.php on line 1331
+Exception Attributes: array (
+  'file' => 'Naturaleses/import.php',
+  'paths' => 
+  array (
+    0 => '/srv/http/lleida/templates/',
+    1 => '/srv/http/lleida/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/View/View.php:748
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:688
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:530
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:25:57 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:27:28 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:28:20 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:49:47 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:50:04 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:50:11 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:50:38 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:54:14 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:83
+- /srv/http/lleida/src/Controller/NaturalesesController.php:111
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:54:22 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:54:25 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:83
+- /srv/http/lleida/src/Controller/NaturalesesController.php:111
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:56:15 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:83
+- /srv/http/lleida/src/Controller/NaturalesesController.php:112
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:56:20 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:56:22 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:56:24 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:83
+- /srv/http/lleida/src/Controller/NaturalesesController.php:112
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:56:26 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:56:29 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:83
+- /srv/http/lleida/src/Controller/NaturalesesController.php:112
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:57:16 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:83
+- /srv/http/lleida/src/Controller/NaturalesesController.php:111
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:57:20 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:57:22 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:57:25 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:83
+- /srv/http/lleida/src/Controller/NaturalesesController.php:111
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:58:14 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:83
+- /srv/http/lleida/src/Controller/NaturalesesController.php:112
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:58:17 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:58:19 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:83
+- /srv/http/lleida/src/Controller/NaturalesesController.php:112
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:59:14 Error: [TypeError] Return value of App\Model\Table\NaturalesesTable::import() must be an instance of App\Model\Table\boolean, none returned in /srv/http/lleida/src/Model/Table/NaturalesesTable.php on line 85
+Stack Trace:
+- /srv/http/lleida/src/Controller/NaturalesesController.php:112
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:59:24 Error: [TypeError] Return value of App\Model\Table\NaturalesesTable::import() must be an instance of App\Model\Table\boolean, bool returned in /srv/http/lleida/src/Model/Table/NaturalesesTable.php on line 84
+Stack Trace:
+- /srv/http/lleida/src/Controller/NaturalesesController.php:112
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 09:59:54 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:00:10 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:00:13 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:00:37 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:00:52 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:03:12 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:03:13 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:03:14 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:03:18 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:03:45 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:03:46 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:03:54 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:04:00 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:04:45 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:05:00 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:07:49 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:07:50 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:07:51 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:07:53 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:227
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /css/milligram.min.css.map
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:42:42 Error: [Error] Cannot use object of type Laminas\Diactoros\UploadedFile as array in /srv/http/lleida/src/Model/Table/NaturalesesTable.php on line 94
+Stack Trace:
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 10:58:51 Error: [Error] Class 'App\Model\Table\SplFileObject' not found in /srv/http/lleida/src/Model/Table/NaturalesesTable.php on line 105
+Stack Trace:
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 11:00:00 Error: [Error] Class 'App\Model\Table\SplFileObject' not found in /srv/http/lleida/src/Model/Table/NaturalesesTable.php on line 105
+Stack Trace:
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 11:03:07 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:130
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 11:05:23 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:131
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 11:09:38 Warning: Warning (512): Unable to emit headers. Headers sent in file=/srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php line=929 in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 71]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:09:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 168]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:09:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:09:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:09:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:10:39 Warning: Warning (512): Unable to emit headers. Headers sent in file=/srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php line=929 in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 71]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:10:39 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 168]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:10:39 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:10:39 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:10:39 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:21:27 Error: [Error] Call to undefined function App\Model\Table\int() in /srv/http/lleida/src/Model/Table/NaturalesesTable.php on line 122
+Stack Trace:
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 11:22:14 Error: [RuntimeException] Undefined property `Naturaleses`. You have not defined the `Naturaleses` association on `App\Model\Table\NaturalesesTable`. in /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php on line 2578
+Stack Trace:
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:132
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 11:22:57 Error: [Error] Call to undefined function App\Model\Table\save() in /srv/http/lleida/src/Model/Table/NaturalesesTable.php on line 133
+Stack Trace:
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 11:31:11 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "naturaleses" in /srv/http/lleida/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 458
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php:1515
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:132
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 11:31:54 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "naturaleses" in /srv/http/lleida/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 458
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php:1515
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:133
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 11:32:10 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "naturaleses" in /srv/http/lleida/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 458
+Stack Trace:
+- /srv/http/lleida/vendor/cakephp/cakephp/src/ORM/Table.php:1515
+- /srv/http/lleida/src/Model/Table/NaturalesesTable.php:133
+- /srv/http/lleida/src/Controller/NaturalesesController.php:109
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/BaseApplication.php:229
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:124
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:162
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:119
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /srv/http/lleida/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /srv/http/lleida/webroot/index.php:40
+
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+
+
+2020-04-26 11:38:15 Warning: Warning (512): Unable to emit headers. Headers sent in file=/srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php line=830 in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 71]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:38:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 168]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:38:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:38:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:38:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:47:02 Warning: Warning (512): Unable to emit headers. Headers sent in file=/srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php line=929 in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 71]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:47:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 168]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:47:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:47:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:47:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:929) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:49:14 Warning: Warning (512): Unable to emit headers. Headers sent in file=/srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php line=830 in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 71]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:49:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 168]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:49:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:49:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-04-26 11:49:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /srv/http/lleida/vendor/cakephp/cakephp/src/Error/Debugger.php:830) in [/srv/http/lleida/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 197]
+Request URL: /naturaleses/import
+Referer URL: http://192.168.1.115:8765/naturaleses/import
+Client IP: 192.168.1.163
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 130
+[main] - ROOT/webroot/index.php, line 40
+
+
+
