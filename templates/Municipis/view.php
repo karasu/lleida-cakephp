@@ -23,8 +23,8 @@
                     <td><?= h($municipi->id) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Comarque') ?></th>
-                    <td><?= $municipi->has('comarque') ? $this->Html->link($municipi->comarque->id, ['controller' => 'Comarques', 'action' => 'view', $municipi->comarque->id]) : '' ?></td>
+                    <th><?= __('Comarca') ?></th>
+                    <td><?= $municipi->has('comarca') ? $this->Html->link($municipi->comarca->id, ['controller' => 'Comarques', 'action' => 'view', $municipi->comarca->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Nom') ?></th>

@@ -107,4 +107,16 @@ class LocalitatsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function import() {
+        if ($this->request->is('post')) {
+            $data = $this->request->getData();
+            if ($this->Localitats->import($data['csv']))
+            {
+                $this->Flash->success(__('All Localitats have been imported.'));
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('Localitats data could not be imported. Please, try again'));
+        }
+    }
 }

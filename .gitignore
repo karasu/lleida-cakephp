@@ -1,4 +1,4 @@
 config/app_local.php
-logs/*
+logs/*.log
 tmp/*
 
