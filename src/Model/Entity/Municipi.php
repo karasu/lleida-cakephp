@@ -29,9 +29,10 @@ class Municipi extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'comarca_id' => true,
         'nom' => true,
-        'comarque' => true,
+        'comarca' => true,
         'centres' => true,
         'districtes' => true,
         'localitats' => true,

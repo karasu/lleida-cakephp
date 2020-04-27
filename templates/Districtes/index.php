@@ -5,7 +5,10 @@
  */
 ?>
 <div class="districtes index content">
-    <?= $this->Html->link(__('New Districte'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+    <div class="float-right">
+        <?= $this->Html->link(__('New Districte'), ['action' => 'add'], ['class' => 'button']) ?>
+        <?= $this->Html->link(__('Import'), ['action' => 'import'], ['class' => 'button button-outline']) ?>
+    </div>
     <h3><?= __('Districtes') ?></h3>
     <div class="table-responsive">
         <table>

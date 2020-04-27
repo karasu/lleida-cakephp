@@ -27,6 +27,7 @@ class Districte extends Entity
      * @var array
      */
     protected $_accessible = [
+        'id' => true,
         'municipi_id' => true,
         'nom' => true,
         'municipi' => true,

@@ -1,21 +1,21 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Comarca $comarca
+ * @var \App\Model\Entity\Districte $districte
  */
 ?>
 <div class="row">
     <aside class="column">
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('List Delegacions'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('List Districtes'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
-        <div class="comarques form content">
+        <div class="districtes form content">
             <?= $this->Form->create(null, ['type' => 'file']) ?>
             <fieldset>
-                <legend><?= __('Choose CSV file to import Comarques') ?></legend>
+                <legend><?= __('Choose CSV file to import Districtes') ?></legend>
                 <input type="file" name="csv" />
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

@@ -12,7 +12,7 @@
         </div>
     </aside>
     <div class="column-responsive column-80">
-        <div class="titularitats form content">
+        <div class="delegacions form content">
             <?= $this->Form->create(null, ['type' => 'file']) ?>
             <fieldset>
                 <legend><?= __('Choose CSV file to import Delegacions') ?></legend>

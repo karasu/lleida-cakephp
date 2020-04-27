@@ -107,4 +107,16 @@ class DistrictesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function import() {
+        if ($this->request->is('post')) {
+            $data = $this->request->getData();
+            if ($this->Districtes->import($data['csv']))
+            {
+                $this->Flash->success(__('All Districtes have been imported.'));
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('Districtes data could not be imported. Please, try again'));
+        }
+    }
 }

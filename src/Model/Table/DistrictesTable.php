@@ -93,4 +93,59 @@ class DistrictesTable extends Table
 
         return $rules;
     }
+
+    public function import($uploadedFile) : bool
+    {
+        // Check that the upload was ok and the uploaded file is a csv one
+        if ($uploadedFile->getError() != 0 || $uploadedFile->getClientMediaType() != 'text/csv')
+        {
+            return false;
+        }
+
+        // move file
+        $filename = '/tmp/lleida-import.csv';
+        $uploadedFile->moveTo($filename);
+
+        // open file
+        $file = new SplFileObject($filename);
+        $file->setFlags(SplFileObject::READ_CSV | SplFileObject::READ_AHEAD | SplFileObject::SKIP_EMPTY | SplFileObject::DROP_NEW_LINE);
+        $file->setCsvControl(';');
+
+        $header = $file->fgetcsv();
+
+        while (!$file->eof()) {
+            $row = $file->fgetcsv();
+            // for each header field 
+ 			foreach ($header as $k=>$head) {
+                $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
+                if ($head == 'Codi municipi' && isset($row[$k])) {
+                    $municipi_id = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                } else if ($head == 'Codi districte municipal' && isset($row[$k])) {
+                    $id = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                } else if ($head == 'Nom DM' && isset($row[$k])) {
+                   $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                }
+            }
+
+            if (isset($municipi_id) && isset($id) && isset($nom)) {              
+                try {
+                    $districte = $this->get($id);
+                } catch (RecordNotFoundException $e) {
+                    $districte = $this->newEmptyEntity();
+                    $districte->id = $id;
+                }
+                
+                $districte->nom = $nom;
+                $districte->municipi_id = $municipi_id;
+
+                if (!$this->save($districte)) {
+                    // No podem guardar el registre. Error!
+                    $file = null;
+                    return false;
+                }
+            }
+        }
+        $file = null;
+        return true;
+    }
 }
