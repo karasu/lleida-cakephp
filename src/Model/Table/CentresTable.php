@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
 
 use \SplFileObject;
 use Cake\Datasource\Exception\RecordNotFoundException;
+use Cake\Datasource\Exception\InvalidPrimaryKeyException;
 
 /**
  * Centres Model
@@ -177,5 +178,136 @@ class CentresTable extends Table
 
         return $rules;
     }
- 
+
+    private function str_convert($mystr) : string
+    {
+        return mb_convert_encoding($mystr, "UTF-8", "ISO-8859-1");
+    }
+    
+    public function import($uploadedFile) : bool
+    {
+        // Check that the upload was ok and the uploaded file is a csv one
+        if ($uploadedFile->getError() != 0 || $uploadedFile->getClientMediaType() != 'text/csv')
+        {
+            return false;
+        }
+
+        // move file
+        $filename = '/tmp/lleida-import.csv';
+        $uploadedFile->moveTo($filename);
+
+        // open file
+        $file = new SplFileObject($filename);
+        $file->setFlags(SplFileObject::READ_CSV | SplFileObject::READ_AHEAD | SplFileObject::SKIP_EMPTY | SplFileObject::DROP_NEW_LINE);
+        $file->setCsvControl(';');
+
+        $header = $file->fgetcsv();
+
+        // Codi centre	Denominació completa	Codi naturalesa	Nom naturalesa	Codi titularitat	Nom titularitat	Adreça	Codi postal
+        // Telèfon	FAX	Codi delegació	Nom delegació	Codi comarca	Nom comarca	Codi municipi	Nom municipi	Codi districte municipal
+        // Nom DM	Codi localitat	Nom localitat	Zona educativa	Coordenades UTM X	Coordenades UTM Y	Coordenades GEO X	Coordenades GEO Y
+        // E-mail centre	EINF1C	EINF2C	EPRI	ESO	BATX	AA01	CFPM	PPAS	AA03	CFPS	EE	IFE	PFI	PA01	CFAM	PA02	CFAS
+        // ESDI	ESCM	ESCS	ADR	CRBC	IDI	DANE	DANP	DANS	MUSE	MUSP	MUSS	TEGM	TEGS	ESTR	ADULTS
+
+        $dat = array();
+        while (!$file->eof()) {
+            $row = $file->fgetcsv();
+            // for each header field 
+ 			foreach ($header as $k=>$head) {
+                $head = $this->str_convert($head);
+                if ($head == 'Codi centre') {
+                    $dat['codi'] = $this->str_convert($row[$k]);
+                } else if ($head == 'Denominació completa') {
+                    $dat['denominacio_completa'] = $this->str_convert($row[$k]);
+                } else if ($head == 'Codi naturalesa') {
+                    $dat['naturalesa_id'] = intval($this->str_convert($row[$k]));
+                } else if ($head == 'Codi titularitat') {
+                    $dat['titularitat_id'] = intval($this->str_convert($row[$k]));
+                } else if ($head == 'Adreça') {
+                    $dat['adreca'] = $this->str_convert($row[$k]);
+                } else if ($head == 'Codi postal') {
+                    $dat['codi_postal'] = $this->str_convert($row[$k]);
+                } else if ($head == 'Telèfon') {
+                    $dat['telefon'] = $this->str_convert($row[$k]);
+                } else if ($head == 'FAX') {
+                    $dat['fax'] = $this->str_convert($row[$k]);
+                } else if ($head == 'Codi municipi') {
+                    $dat['municipi_id'] = $this->str_convert($row[$k]);
+                } else if ($head == 'Codi districte') {
+                    $dat['districte_id'] = $this->str_convert($row[$k]);
+                } else if ($head == 'Codi localitat') {
+                    $dat['localitat_id'] = $this->str_convert($row[$k]);
+                } else if ($head == 'Zona educativa') {
+                    $dat['zona_educativa'] = $this->str_convert($row[$k]);
+                } else if ($head == 'Coordenades UTM X') {
+                    $dat['coordenades_utm_x'] = floatval($this->str_convert($row[$k]));
+                } else if ($head == 'Coordenades UTM Y') {
+                    $dat['coordenades_utm_y'] = floatval($this->str_convert($row[$k]));
+                } else if ($head == 'Coordenades GEO X') {
+                    $dat['coordenades_geo_x'] = floatval($this->str_convert($row[$k]));
+                } else if ($head == 'Coordenades GEO Y') {
+                    $dat['coordenades_geo_y'] = floatval($this->str_convert($row[$k]));
+                } else if ($head == 'E-mail centre') {
+                    $dat['email_centre'] = $this->str_convert($row[$k]);
+                }
+            }                
+
+            if (isset($dat['codi'])) {
+                try {
+                    // Busca el centre de codi $dat['codi']
+
+                    $query = $this->find('all')
+                        ->where(['Centres.codi =' => $dat['codi']])
+                        ->limit(1);
+                    // Executem la consulta i passem el resultat a un array
+                    debug($query);
+                    $olddata = $query->toArray();
+                    if (!empty($olddata)) {
+                        debug($olddata[0]);
+                        // Obté el centre amb el id que correspon al $dat['codi']
+                        $centre = $this->get($olddata[0]['id']);
+                    }
+                    else {
+                        $centre = $this->newEmptyEntity();
+                    }
+                } catch (RecordNotFoundException $e) {
+                    $centre = $this->newEmptyEntity();
+                } catch (InvalidPrimaryKeyException $e) {
+                    $centre = $this->newEmptyEntity();
+                }
+
+                $centre->codi = $dat['codi'];
+                $centre->denominacio_completa = $dat['denominacio_completa'];
+                $centre->naturalesa_id = $dat['naturalesa_id'];
+                $centre->titularitat_id = $dat['titularitat_id'];
+                $centre->adreca = $dat['adreca'];
+                $centre->codi_postal = $dat['codi_postal'];
+                $centre->telefon = $dat['telefon'];
+                $centre->fax = $dat['fax'];
+                $centre->municipi_id = $dat['municipi_id'];
+                if (isset($dat['districte_id'])) {
+                    $centre->districte_id =  $dat['districte_id'];
+                }
+                $centre->localitat_id = $dat['localitat_id'];
+                $centre->zona_educativa = $dat['zona_educativa'];
+                $centre->coordenades_utm_x = $dat['coordenades_utm_x'];
+                $centre->coordenades_utm_y = $dat['coordenades_utm_y'];
+                $centre->coordenades_geo_x = $dat['coordenades_geo_x'];
+                $centre->coordenades_geo_y = $dat['coordenades_geo_y'];
+                $centre->email_centre = $dat['email_centre'];
+
+                debug($centre);
+
+                if (!$this->save($centre)) {
+                    // No podem guardar el registre. Error!
+                    $file = null;
+                    return false;
+                }
+            }
+            
+            $dat = array();
+        }
+        $file = null;
+        return true;
+    } 
 }

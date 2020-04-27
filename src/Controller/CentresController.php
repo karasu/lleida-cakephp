@@ -117,4 +117,16 @@ class CentresController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function import() {
+        if ($this->request->is('post')) {
+            $data = $this->request->getData();
+            if ($this->Centres->import($data['csv']))
+            {
+                $this->Flash->success(__('All Centres have been imported.'));
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('Centres data could not be imported. Please, try again'));
+        }
+    }
 }
