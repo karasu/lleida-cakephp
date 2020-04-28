@@ -11,7 +11,7 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $nom
  */
-class Delegacion extends Entity
+class Delegacio extends Entity
 {
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().

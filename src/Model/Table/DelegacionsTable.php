@@ -43,6 +43,8 @@ class DelegacionsTable extends Table
         $this->setTable('delegacions');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->setEntityClass('App\Model\Entity\Delegacio');
     }
 
     /**

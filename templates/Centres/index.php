@@ -14,42 +14,42 @@
         <table>
             <thead>
                 <tr>
-                    <th><?= $this->Paginator->sort('id') ?></th>
+                    <!--<th><?= $this->Paginator->sort('id') ?></th>-->
                     <th><?= $this->Paginator->sort('codi') ?></th>
-                    <th><?= $this->Paginator->sort('denominacio_completa') ?></th>
+                    <th><?= $this->Paginator->sort('denominacio_completa', __('Denominació completa')) ?></th>
                     <th><?= $this->Paginator->sort('naturalesa_id') ?></th>
                     <th><?= $this->Paginator->sort('titularitat_id') ?></th>
-                    <th><?= $this->Paginator->sort('adreca') ?></th>
-                    <th><?= $this->Paginator->sort('codi_postal') ?></th>
-                    <th><?= $this->Paginator->sort('telefon') ?></th>
+                    <th><?= $this->Paginator->sort('adreca', __('Adreça')) ?></th>
+                    <th><?= $this->Paginator->sort('codi_postal', __('Codi postal')) ?></th>
+                    <th><?= $this->Paginator->sort('telefon', __('Telèfon')) ?></th>
                     <th><?= $this->Paginator->sort('fax') ?></th>
                     <th><?= $this->Paginator->sort('municipi_id') ?></th>
                     <th><?= $this->Paginator->sort('districte_id') ?></th>
                     <th><?= $this->Paginator->sort('localitat_id') ?></th>
                     <th><?= $this->Paginator->sort('zona_educativa') ?></th>
-                    <th><?= $this->Paginator->sort('coordenades_utm_x') ?></th>
-                    <th><?= $this->Paginator->sort('coordenades_utm_y') ?></th>
-                    <th><?= $this->Paginator->sort('coordenades_geo_x') ?></th>
-                    <th><?= $this->Paginator->sort('coordenades_geo_y') ?></th>
-                    <th><?= $this->Paginator->sort('email_centre') ?></th>
+                    <th><?= $this->Paginator->sort('coordenades_utm_x', __('Utm X')) ?></th>
+                    <th><?= $this->Paginator->sort('coordenades_utm_y', __('Utm Y')) ?></th>
+                    <th><?= $this->Paginator->sort('coordenades_geo_x', __('Geo X')) ?></th>
+                    <th><?= $this->Paginator->sort('coordenades_geo_y', __('Geo Y')) ?></th>
+                    <th><?= $this->Paginator->sort('email_centre', __('Correu electrònic')) ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($centres as $centre): ?>
                 <tr>
-                    <td><?= $this->Number->format($centre->id) ?></td>
+                    <!--<td><?= $this->Number->format($centre->id) ?></td>-->
                     <td><?= h($centre->codi) ?></td>
                     <td><?= h($centre->denominacio_completa) ?></td>
-                    <td><?= $centre->has('naturalese') ? $this->Html->link($centre->naturalese->id, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalese->id]) : '' ?></td>
-                    <td><?= $centre->has('titularitat') ? $this->Html->link($centre->titularitat->id, ['controller' => 'Titularitats', 'action' => 'view', $centre->titularitat->id]) : '' ?></td>
+                    <td><?= $centre->has('naturalesa') ? $this->Html->link($centre->naturalesa->nom, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalesa->id]) : '' ?></td>
+                    <td><?= $centre->has('titularitat') ? $this->Html->link($centre->titularitat->nom, ['controller' => 'Titularitats', 'action' => 'view', $centre->titularitat->id]) : '' ?></td>
                     <td><?= h($centre->adreca) ?></td>
                     <td><?= h($centre->codi_postal) ?></td>
                     <td><?= h($centre->telefon) ?></td>
                     <td><?= h($centre->fax) ?></td>
-                    <td><?= $centre->has('municipi') ? $this->Html->link($centre->municipi->id, ['controller' => 'Municipis', 'action' => 'view', $centre->municipi->id]) : '' ?></td>
-                    <td><?= $centre->has('districte') ? $this->Html->link($centre->districte->id, ['controller' => 'Districtes', 'action' => 'view', $centre->districte->id]) : '' ?></td>
-                    <td><?= $centre->has('localitat') ? $this->Html->link($centre->localitat->id, ['controller' => 'Localitats', 'action' => 'view', $centre->localitat->id]) : '' ?></td>
+                    <td><?= $centre->has('municipi') ? $this->Html->link($centre->municipi->nom, ['controller' => 'Municipis', 'action' => 'view', $centre->municipi->id]) : '' ?></td>
+                    <td><?= $centre->has('districte') ? $this->Html->link($centre->districte->nom, ['controller' => 'Districtes', 'action' => 'view', $centre->districte->id]) : '' ?></td>
+                    <td><?= $centre->has('localitat') ? $this->Html->link($centre->localitat->nom, ['controller' => 'Localitats', 'action' => 'view', $centre->localitat->id]) : '' ?></td>
                     <td><?= h($centre->zona_educativa) ?></td>
                     <td><?= $this->Number->format($centre->coordenades_utm_x) ?></td>
                     <td><?= $this->Number->format($centre->coordenades_utm_y) ?></td>

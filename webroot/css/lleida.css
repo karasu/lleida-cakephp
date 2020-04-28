@@ -1,0 +1,11 @@
+.container {
+    max-width: 80%;
+}
+
+.top-nav {
+    width: 80%;
+}
+
+.content {
+    border-radius: 1rem;
+}

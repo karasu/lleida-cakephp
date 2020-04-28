@@ -111,6 +111,7 @@ class LocalitatsTable extends Table
         $file->setCsvControl(';');
 
         $header = $file->fgetcsv();
+        $processed_codis = array();
 
         while (!$file->eof()) {
             $row = $file->fgetcsv();
@@ -118,18 +119,22 @@ class LocalitatsTable extends Table
  			foreach ($header as $k=>$head) {
                 $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
                 if (isset($row[$k])) {
+                    $value = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
                     if ($head == 'Codi municipi') {
-                        $municipi_id = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                        $municipi_id = $value;
                     } else if ($head == 'Codi localitat') {
-                        $codi = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
+                        $codi = intval($value);
                     } else if ($head == 'Nom localitat') {
-                    $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                        $nom = $value;
                     }
                 }
             }
 
+            //debug($municipi_id);
+
             // Només guardem aquelles localitats diferents del municipi
-            if (isset($municipi_id) && isset($codi) && isset($nom) && $codi != 1) {
+            if (!in_array($codi, $processed_codis) && isset($municipi_id) && isset($codi) && isset($nom) && $codi != 1) {
+                $processed_codis[] = $codi;
                 try {
                     //$localitat = $this->get($id);
                     $query = $this->find('all')

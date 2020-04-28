@@ -52,6 +52,7 @@ class MunicipisTable extends Table
         $this->belongsTo('Comarques', [
             'foreignKey' => 'comarca_id',
             'joinType' => 'INNER',
+            'propertyName' => 'comarca'
         ]);
         $this->hasMany('Centres', [
             'foreignKey' => 'municipi_id',
@@ -121,21 +122,27 @@ class MunicipisTable extends Table
 
         $header = $file->fgetcsv();
 
+        $processed_ids = array();
+
         while (!$file->eof()) {
             $row = $file->fgetcsv();
             // for each header field 
  			foreach ($header as $k=>$head) {
                 $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
-                if ($head == 'Codi comarca' && isset($row[$k])) {
-                    $comarca_id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
-                } else if ($head == 'Codi municipi' && isset($row[$k])) {
-                    $id = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
-                } else if ($head == 'Nom municipi' && isset($row[$k])) {
-                   $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                if (isset($row[$k])) {
+                    $value = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                    if ($head == 'Codi comarca') {
+                        $comarca_id = intval($value);
+                    } else if ($head == 'Codi municipi') {
+                        $id = $value;
+                    } else if ($head == 'Nom municipi') {
+                        $nom = $value;
+                    }
                 }
             }
 
-            if (isset($comarca_id) && isset($id) && isset($nom)) {              
+            if (!in_array($id, $processed_ids) && isset($comarca_id) && isset($id) && isset($nom)) {              
+                $processed_ids[] = $id;
                 try {
                     $municipi = $this->get($id);
                 } catch (RecordNotFoundException $e) {

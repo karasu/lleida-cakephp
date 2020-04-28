@@ -43,6 +43,8 @@ class NaturalesesTable extends Table
         $this->setTable('naturaleses');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->setEntityClass('App\Model\Entity\Naturalesa');
     }
 
     /**

@@ -36,7 +36,7 @@ CREATE TABLE comarques (
 ) CHARSET=utf8mb4;
 
 CREATE TABLE municipis (
-    id VARCHAR(5) PRIMARY KEY,
+    id VARCHAR(6) PRIMARY KEY,
     comarca_id INT NOT NULL,
     nom VARCHAR(255) NOT NULL,
     UNIQUE KEY(nom),

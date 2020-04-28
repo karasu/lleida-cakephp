@@ -27,15 +27,15 @@
                     <td><?= h($centre->denominacio_completa) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Naturalese') ?></th>
-                    <td><?= $centre->has('naturalese') ? $this->Html->link($centre->naturalese->id, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalese->id]) : '' ?></td>
+                    <th><?= __('Naturalesa') ?></th>
+                    <td><?= $centre->has('naturalesa') ? $this->Html->link($centre->naturalesa->id, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalesa->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Titularitat') ?></th>
                     <td><?= $centre->has('titularitat') ? $this->Html->link($centre->titularitat->id, ['controller' => 'Titularitats', 'action' => 'view', $centre->titularitat->id]) : '' ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Adreca') ?></th>
+                    <th><?= __('Adreça') ?></th>
                     <td><?= h($centre->adreca) ?></td>
                 </tr>
                 <tr>
@@ -43,7 +43,7 @@
                     <td><?= h($centre->codi_postal) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Telefon') ?></th>
+                    <th><?= __('Telèfon') ?></th>
                     <td><?= h($centre->telefon) ?></td>
                 </tr>
                 <tr>
@@ -75,24 +75,24 @@
                     <td><?= $this->Number->format($centre->id) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Coordenades Utm X') ?></th>
+                    <th><?= __('Coord Utm X') ?></th>
                     <td><?= $this->Number->format($centre->coordenades_utm_x) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Coordenades Utm Y') ?></th>
+                    <th><?= __('Coord Utm Y') ?></th>
                     <td><?= $this->Number->format($centre->coordenades_utm_y) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Coordenades Geo X') ?></th>
+                    <th><?= __('Coord Geo X') ?></th>
                     <td><?= $this->Number->format($centre->coordenades_geo_x) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Coordenades Geo Y') ?></th>
+                    <th><?= __('Coord Geo Y') ?></th>
                     <td><?= $this->Number->format($centre->coordenades_geo_y) ?></td>
                 </tr>
             </table>
             <div class="related">
-                <h4><?= __('Related Estudis') ?></h4>
+                <h4><?= __('Estudis') ?></h4>
                 <?php if (!empty($centre->estudis)) : ?>
                 <div class="table-responsive">
                     <table>

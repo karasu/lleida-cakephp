@@ -12,7 +12,7 @@ use Cake\ORM\Entity;
  * @property int $comarca_id
  * @property string $nom
  *
- * @property \App\Model\Entity\Comarque $comarque
+ * @property \App\Model\Entity\Comarca $comarca
  * @property \App\Model\Entity\Centre[] $centres
  * @property \App\Model\Entity\Districte[] $districtes
  * @property \App\Model\Entity\Localitat[] $localitats

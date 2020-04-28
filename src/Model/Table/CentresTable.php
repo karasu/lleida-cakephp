@@ -212,45 +212,53 @@ class CentresTable extends Table
         $dat = array();
         while (!$file->eof()) {
             $row = $file->fgetcsv();
-            // for each header field 
+            // for each header field
  			foreach ($header as $k=>$head) {
                 $head = $this->str_convert($head);
                 if (isset($row[$k])) {
+                    $row[$k] = $this->str_convert($row[$k]);
                     if ($head == 'Codi centre') {
-                        $dat['codi'] = $this->str_convert($row[$k]);
+                        // csv should use quotes for this one
+                        $dat['codi'] = $row[$k];
                     } else if ($head == 'Denominació completa') {
-                        $dat['denominacio_completa'] = $this->str_convert($row[$k]);
+                        $dat['denominacio_completa'] = $row[$k];
                     } else if ($head == 'Codi naturalesa') {
-                        $dat['naturalesa_id'] = intval($this->str_convert($row[$k]));
+                        $dat['naturalesa_id'] = intval($row[$k]);
                     } else if ($head == 'Codi titularitat') {
-                        $dat['titularitat_id'] = intval($this->str_convert($row[$k]));
+                        $dat['titularitat_id'] = intval($row[$k]);
                     } else if ($head == 'Adreça') {
-                        $dat['adreca'] = $this->str_convert($row[$k]);
+                        $dat['adreca'] = $row[$k];
                     } else if ($head == 'Codi postal') {
-                        $dat['codi_postal'] = $this->str_convert($row[$k]);
+                        // csv should use quotes for this one
+                        $dat['codi_postal'] = $row[$k];
                     } else if ($head == 'Telèfon') {
-                        $dat['telefon'] = $this->str_convert($row[$k]);
+                        $dat['telefon'] = $row[$k];
                     } else if ($head == 'FAX') {
-                        $dat['fax'] = $this->str_convert($row[$k]);
+                        $dat['fax'] = $row[$k];
                     } else if ($head == 'Codi municipi') {
-                        $dat['municipi_id'] = $this->str_convert($row[$k]);
+                        // csv should use quotes for this one
+                        $dat['municipi_id'] = $row[$k];
                     } else if ($head == 'Codi districte') {
-                        $dat['districte_id'] = $this->str_convert($row[$k]);
+                        $dat['districte_id'] = $row[$k];
                     } else if ($head == 'Codi localitat') {
                         // Si la localitat és 1 vol dir que és directament el municipi (Generalitat)
                         if (intval($row[$k]) != 1) {
-                            $dat['localitat_id'] = $this->str_convert($row[$k]);
+                            $dat['localitat_id'] = $row[$k];
                         }
                     } else if ($head == 'Zona educativa') {
-                        $dat['zona_educativa'] = $this->str_convert($row[$k]);
+                        $dat['zona_educativa'] = $row[$k];
                     } else if ($head == 'Coordenades UTM X') {
-                        $dat['coordenades_utm_x'] = floatval($this->str_convert($row[$k]));
+                        $var = (double)filter_var($row[$k], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $dat['coordenades_utm_x'] = $var;
                     } else if ($head == 'Coordenades UTM Y') {
-                        $dat['coordenades_utm_y'] = floatval($this->str_convert($row[$k]));
+                        $var = (double)filter_var($row[$k], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $dat['coordenades_utm_y'] = $var;
                     } else if ($head == 'Coordenades GEO X') {
-                        $dat['coordenades_geo_x'] = floatval($this->str_convert($row[$k]));
+                        $var = (double)filter_var($row[$k], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $dat['coordenades_geo_x'] = $var;
                     } else if ($head == 'Coordenades GEO Y') {
-                        $dat['coordenades_geo_y'] = floatval($this->str_convert($row[$k]));
+                        $var = (double)filter_var($row[$k], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $dat['coordenades_geo_y'] = $var;
                     } else if ($head == 'E-mail centre') {
                         $dat['email_centre'] = $this->str_convert($row[$k]);
                     }
@@ -261,13 +269,16 @@ class CentresTable extends Table
                 try {
                     // Busca el centre de codi $dat['codi']
                     $query = $this->find('all')
-                        ->where(['Centres.codi =' => $dat['codi']])
+                        ->where(['codi =' => $dat['codi']])
                         ->limit(1);
                     // Executem la consulta i passem el resultat a un array
                     $olddata = $query->toArray();
+                    // debug($dat['codi']);
+                    // debug($olddata);
                     if (!empty($olddata)) {
                         // Obté el centre amb el id que correspon al $dat['codi']
                         $centre = $this->get($olddata[0]['id']);
+                        // debug($centre);
                     }
                     else {
                         $centre = $this->newEmptyEntity();

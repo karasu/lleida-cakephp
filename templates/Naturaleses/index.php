@@ -1,7 +1,7 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Naturalese[]|\Cake\Collection\CollectionInterface $naturaleses
+ * @var \App\Model\Entity\Naturalesa[]|\Cake\Collection\CollectionInterface $naturaleses
  */
 ?>
 <div class="naturaleses index content">
@@ -20,14 +20,14 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($naturaleses as $naturalese): ?>
+                <?php foreach ($naturaleses as $naturalesa): ?>
                 <tr>
-                    <td><?= $this->Number->format($naturalese->id) ?></td>
-                    <td><?= h($naturalese->nom) ?></td>
+                    <td><?= $this->Number->format($naturalesa->id) ?></td>
+                    <td><?= h($naturalesa->nom) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $naturalese->id]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $naturalese->id]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $naturalese->id], ['confirm' => __('Are you sure you want to delete # {0}?', $naturalese->id)]) ?>
+                        <?= $this->Html->link(__('View'), ['action' => 'view', $naturalesa->id]) ?>
+                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $naturalesa->id]) ?>
+                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $naturalesa->id], ['confirm' => __('Are you sure you want to delete # {0}?', $naturalesa->id)]) ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>

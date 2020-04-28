@@ -27,7 +27,7 @@ use Cake\ORM\Entity;
  * @property float $coordenades_geo_y
  * @property string $email_centre
  *
- * @property \App\Model\Entity\Naturalese $naturalese
+ * @property \App\Model\Entity\Naturalesa $naturalesa
  * @property \App\Model\Entity\Titularitat $titularitat
  * @property \App\Model\Entity\Municipi $municipi
  * @property \App\Model\Entity\Districte $districte

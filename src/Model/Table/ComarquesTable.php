@@ -46,6 +46,8 @@ class ComarquesTable extends Table
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
+        $this->setEntityClass('App\Model\Entity\Comarca');
+
         $this->belongsTo('Delegacions', [
             'foreignKey' => 'delegacio_id',
             'joinType' => 'INNER',

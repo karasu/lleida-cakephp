@@ -1,7 +1,7 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Naturalese $naturalese
+ * @var \App\Model\Entity\Naturalesa $naturalesa
  */
 ?>
 <div class="row">
@@ -10,17 +10,17 @@
             <h4 class="heading"><?= __('Actions') ?></h4>
             <?= $this->Form->postLink(
                 __('Delete'),
-                ['action' => 'delete', $naturalese->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $naturalese->id), 'class' => 'side-nav-item']
+                ['action' => 'delete', $naturalesa->id],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $naturalesa->id), 'class' => 'side-nav-item']
             ) ?>
             <?= $this->Html->link(__('List Naturaleses'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
         <div class="naturaleses form content">
-            <?= $this->Form->create($naturalese) ?>
+            <?= $this->Form->create($naturalesa) ?>
             <fieldset>
-                <legend><?= __('Edit Naturalese') ?></legend>
+                <legend><?= __('Edit Naturalesa') ?></legend>
                 <?php
                     echo $this->Form->control('nom');
                 ?>
