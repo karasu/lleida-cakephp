@@ -214,53 +214,53 @@ class CentresTable extends Table
             $row = $file->fgetcsv();
             // for each header field
  			foreach ($header as $k=>$head) {
-                $head = $this->str_convert($head);
+                $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
                 if (isset($row[$k])) {
-                    $row[$k] = $this->str_convert($row[$k]);
+                    $value = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
                     if ($head == 'Codi centre') {
                         // csv should use quotes for this one
-                        $dat['codi'] = $row[$k];
+                        $dat['codi'] = $value;
                     } else if ($head == 'Denominació completa') {
-                        $dat['denominacio_completa'] = $row[$k];
+                        $dat['denominacio_completa'] = $value;
                     } else if ($head == 'Codi naturalesa') {
-                        $dat['naturalesa_id'] = intval($row[$k]);
+                        $dat['naturalesa_id'] = intval($value);
                     } else if ($head == 'Codi titularitat') {
-                        $dat['titularitat_id'] = intval($row[$k]);
+                        $dat['titularitat_id'] = intval($value);
                     } else if ($head == 'Adreça') {
-                        $dat['adreca'] = $row[$k];
+                        $dat['adreca'] = $value;
                     } else if ($head == 'Codi postal') {
                         // csv should use quotes for this one
-                        $dat['codi_postal'] = $row[$k];
+                        $dat['codi_postal'] = $value;
                     } else if ($head == 'Telèfon') {
-                        $dat['telefon'] = $row[$k];
+                        $dat['telefon'] = $value;
                     } else if ($head == 'FAX') {
-                        $dat['fax'] = $row[$k];
+                        $dat['fax'] = $value;
                     } else if ($head == 'Codi municipi') {
                         // csv should use quotes for this one
-                        $dat['municipi_id'] = $row[$k];
+                        $dat['municipi_id'] = $value;
                     } else if ($head == 'Codi districte') {
-                        $dat['districte_id'] = $row[$k];
+                        $dat['districte_id'] = $value;
                     } else if ($head == 'Codi localitat') {
                         // Si la localitat és 1 vol dir que és directament el municipi (Generalitat)
-                        if (intval($row[$k]) != 1) {
-                            $dat['localitat_id'] = $row[$k];
+                        if (intval($value) != 1) {
+                            $dat['localitat_id'] = $value;
                         }
                     } else if ($head == 'Zona educativa') {
-                        $dat['zona_educativa'] = $row[$k];
+                        $dat['zona_educativa'] = $value;
                     } else if ($head == 'Coordenades UTM X') {
-                        $var = (double)filter_var($row[$k], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $var = (double)filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
                         $dat['coordenades_utm_x'] = $var;
                     } else if ($head == 'Coordenades UTM Y') {
-                        $var = (double)filter_var($row[$k], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $var = (double)filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
                         $dat['coordenades_utm_y'] = $var;
                     } else if ($head == 'Coordenades GEO X') {
-                        $var = (double)filter_var($row[$k], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $var = (double)filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
                         $dat['coordenades_geo_x'] = $var;
                     } else if ($head == 'Coordenades GEO Y') {
-                        $var = (double)filter_var($row[$k], FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $var = (double)filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
                         $dat['coordenades_geo_y'] = $var;
                     } else if ($head == 'E-mail centre') {
-                        $dat['email_centre'] = $this->str_convert($row[$k]);
+                        $dat['email_centre'] = $this->str_convert($value);
                     }
                 }
             }                

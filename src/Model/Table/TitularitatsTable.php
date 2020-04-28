@@ -105,21 +105,25 @@ class TitularitatsTable extends Table
         $file->setCsvControl(';');
 
         $header = $file->fgetcsv();
-
+        $processed_ids = array();
         while (!$file->eof()) {
             $row = $file->fgetcsv();
             // for each header field 
  			foreach ($header as $k=>$head) {
-                $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
-                if ($head == 'Codi titularitat' && isset($row[$k])) {
-                    $id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
-                }
-                else if ($head == 'Nom titularitat' && isset($row[$k])) {
-                   $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                if (isset($row[$k])) {
+                    $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
+                    $value = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                    if ($head == 'Codi titularitat') {
+                        $id = intval($value);
+                    }
+                    else if ($head == 'Nom titularitat') {
+                        $nom = $value;
+                    }
                 }
             }
 
-            if (isset($id) && isset($nom)) {              
+            if (!in_array($id, $processed_ids) && isset($id) && isset($nom)) {     
+                $processed_ids[] = $id;         
                 try {
                     $titularitat = $this->get($id);
                 } catch (RecordNotFoundException $e) {

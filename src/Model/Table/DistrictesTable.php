@@ -112,6 +112,7 @@ class DistrictesTable extends Table
         $file->setCsvControl(';');
 
         $header = $file->fgetcsv();
+        $processed_ids = array();
 
         while (!$file->eof()) {
             $row = $file->fgetcsv();
@@ -127,7 +128,8 @@ class DistrictesTable extends Table
                 }
             }
 
-            if (isset($municipi_id) && isset($id) && isset($nom)) {              
+            if (!in_array($id, $processed_ids) && isset($municipi_id) && isset($id) && isset($nom)) {              
+                $processed_ids[] = $id;
                 try {
                     $districte = $this->get($id);
                 } catch (RecordNotFoundException $e) {
