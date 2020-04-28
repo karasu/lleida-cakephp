@@ -137,6 +137,7 @@ class ComarquesTable extends Table
 
                 if (!$this->save($comarca)) {
                     // No podem guardar el registre. Error!
+                    debug($comarca->getErrors());
                     $file = null;
                     return false;
                 }

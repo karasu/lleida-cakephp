@@ -148,6 +148,7 @@ class MunicipisTable extends Table
 
                 if (!$this->save($municipi)) {
                     // No podem guardar el registre. Error!
+                    debug($municipi->getErrors());
                     $file = null;
                     return false;
                 }

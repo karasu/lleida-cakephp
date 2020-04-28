@@ -72,8 +72,8 @@ class LocalitatsTable extends Table
         $validator
             ->scalar('nom')
             ->maxLength('nom', 255)
-            ->allowEmptyString('nom')
-            ->add('nom', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->allowEmptyString('nom');
+            // ->add('nom', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         return $validator;
     }
@@ -87,7 +87,7 @@ class LocalitatsTable extends Table
      */
     public function buildRules(RulesChecker $rules): RulesChecker
     {
-        $rules->add($rules->isUnique(['nom']));
+        // $rules->add($rules->isUnique(['nom']));
         $rules->add($rules->existsIn(['municipi_id'], 'Municipis'));
 
         return $rules;
@@ -117,29 +117,44 @@ class LocalitatsTable extends Table
             // for each header field 
  			foreach ($header as $k=>$head) {
                 $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
-                if ($head == 'Codi municipi' && isset($row[$k])) {
-                    $municipi_id = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
-                } else if ($head == 'Codi localitat' && isset($row[$k])) {
-                    $id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
-                } else if ($head == 'Nom localitat' && isset($row[$k])) {
-                   $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                if (isset($row[$k])) {
+                    if ($head == 'Codi municipi') {
+                        $municipi_id = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                    } else if ($head == 'Codi localitat') {
+                        $codi = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
+                    } else if ($head == 'Nom localitat') {
+                    $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                    }
                 }
             }
 
             // Només guardem aquelles localitats diferents del municipi
-            if (isset($municipi_id) && isset($id) && isset($nom) && $id != 1) {
+            if (isset($municipi_id) && isset($codi) && isset($nom) && $codi != 1) {
                 try {
-                    $localitat = $this->get($id);
+                    //$localitat = $this->get($id);
+                    $query = $this->find('all')
+                        ->where(['Localitats.codi =' => $codi, 'Localitats.municipi_id =' => $municipi_id])
+                        ->limit(1);
+                    $olddata = $query->toArray();
+                    if (!empty($olddata)) {
+                        // debug($olddata);
+                        $localitat = $this->get($olddata[0]['id']);
+                    }
+                    else {
+                        $localitat = $this->newEmptyEntity();
+                    }
                 } catch (RecordNotFoundException $e) {
                     $localitat = $this->newEmptyEntity();
                     $localitat->id = $id;
                 }
-                
+
+                $localitat->codi = $codi;
                 $localitat->nom = $nom;
                 $localitat->municipi_id = $municipi_id;
 
                 if (!$this->save($localitat)) {
                     // No podem guardar el registre. Error!
+                    debug($localitat->getErrors());
                     $file = null;
                     return false;
                 }

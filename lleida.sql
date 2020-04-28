@@ -1,5 +1,14 @@
 USE lleida;
 
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created DATETIME,
+    modified DATETIME
+);
+INSERT INTO `users`(`email`, `password`) VALUES ('test@test.com', '$2y$12$3ufkwyfRIX3EQhkQHQcFJ.eI2uHTQRCM5z8CjalJLI8gJzD/OZ4cG');
+
 CREATE TABLE naturaleses (
     id INT PRIMARY KEY,
     nom VARCHAR(255) NOT NULL,
@@ -43,10 +52,10 @@ CREATE TABLE districtes (
 ) CHARSET=utf8mb4;
 
 CREATE TABLE localitats (
-    id VARCHAR(2) PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codi VARCHAR(2) NOT NULL,
     municipi_id VARCHAR(5) NOT NULL,
-    nom VARCHAR(255),
-    UNIQUE KEY(nom),
+    nom VARCHAR(255) NOT NULL,
     FOREIGN KEY municipi_key2 (municipi_id) REFERENCES municipis(id)
 ) CHARSET=utf8mb4;
 
@@ -69,7 +78,7 @@ CREATE TABLE centres (
     fax VARCHAR(12) NOT NULL,
     municipi_id VARCHAR(5) NOT NULL,
     districte_id VARCHAR(2),
-    localitat_id VARCHAR(2),
+    localitat_id INT,
     zona_educativa VARCHAR(255),
     coordenades_utm_x FLOAT NOT NULL,
     coordenades_utm_y FLOAT NOT NULL,
