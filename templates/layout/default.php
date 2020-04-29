@@ -37,7 +37,7 @@ $base_url = 'http://192.168.1.115:8765';
     <?= $this->Html->css('cake.css') ?>
     <?= $this->Html->css('all.min.css') ?>
     <?= $this->Html->css('lleida.css') ?>
-
+    
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>

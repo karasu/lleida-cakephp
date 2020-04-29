@@ -9,3 +9,7 @@
 .content {
     border-radius: 1rem;
 }
+
+#googlemap {
+    height: 300px;
+}

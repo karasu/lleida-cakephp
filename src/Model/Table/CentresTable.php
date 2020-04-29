@@ -11,6 +11,7 @@ use Cake\Validation\Validator;
 use \SplFileObject;
 use Cake\Datasource\Exception\RecordNotFoundException;
 use Cake\Datasource\Exception\InvalidPrimaryKeyException;
+use Cake\ORM\TableRegistry;
 
 /**
  * Centres Model
@@ -179,11 +180,42 @@ class CentresTable extends Table
         return $rules;
     }
 
-    private function str_convert($mystr) : string
+    // Obté el id de la localitat a partir del codi de la localitat i el id del municipi
+    private function getLocalitatId($codi, $municipi_id): int
     {
-        return mb_convert_encoding($mystr, "UTF-8", "ISO-8859-1");
+        $localitats = TableRegistry::getTableLocator()->get('Localitats');
+        $query = $localitats->find('all')
+            ->where([
+                'Localitats.codi =' => $codi,
+                'Localitats.municipi_id =' => $municipi_id])
+            ->limit(1);
+        $olddata = $query->toArray();
+        if (!empty($olddata)) {
+            // debug($olddata);
+            //$localitat_id = $this->get($olddata[0]['id']);
+            $localitat_id = $olddata[0]['id'];
+        } else {
+            $localitat_id = -1;
+        }
+        return $localitat_id;
     }
-    
+
+    private function getFloat($num) : float
+    {
+        $dotPos = strrpos($num, '.');
+        $commaPos = strrpos($num, ',');
+        $sep = (($dotPos > $commaPos) && $dotPos) ? $dotPos :
+            ((($commaPos > $dotPos) && $commaPos) ? $commaPos : false);
+            if (!$sep) {
+                return floatval(preg_replace("/[^0-9]/", "", $num));
+            }
+        
+            return floatval(
+                preg_replace("/[^0-9]/", "", substr($num, 0, $sep)) . '.' .
+                preg_replace("/[^0-9]/", "", substr($num, $sep+1, strlen($num)))
+            );
+    }
+
     public function import($uploadedFile) : bool
     {
         // Check that the upload was ok and the uploaded file is a csv one
@@ -241,26 +273,24 @@ class CentresTable extends Table
                     } else if ($head == 'Codi districte') {
                         $dat['districte_id'] = $value;
                     } else if ($head == 'Codi localitat') {
-                        // Si la localitat és 1 vol dir que és directament el municipi (Generalitat)
-                        if (intval($value) != 1) {
-                            $dat['localitat_id'] = $value;
-                        }
+                        // Al csv les localitats no tenen un codi únic
+                        $localitat_codi = intval($value);
                     } else if ($head == 'Zona educativa') {
                         $dat['zona_educativa'] = $value;
                     } else if ($head == 'Coordenades UTM X') {
-                        $var = (double)filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $var = $this->getFloat($row[$k]);
                         $dat['coordenades_utm_x'] = $var;
                     } else if ($head == 'Coordenades UTM Y') {
-                        $var = (double)filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $var = $this->getFloat($row[$k]);
                         $dat['coordenades_utm_y'] = $var;
                     } else if ($head == 'Coordenades GEO X') {
-                        $var = (double)filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $var = $this->getFloat($row[$k]);
                         $dat['coordenades_geo_x'] = $var;
                     } else if ($head == 'Coordenades GEO Y') {
-                        $var = (double)filter_var($value, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+                        $var = $this->getFloat($row[$k]);
                         $dat['coordenades_geo_y'] = $var;
                     } else if ($head == 'E-mail centre') {
-                        $dat['email_centre'] = $this->str_convert($value);
+                        $dat['email_centre'] = $value;
                     }
                 }
             }                
@@ -289,6 +319,16 @@ class CentresTable extends Table
                     $centre = $this->newEmptyEntity();
                 }
 
+                if (isset($localitat_codi)) {
+                    // Obté el id de la localitat (al csv hi ha un codi que no és únic)
+                    $localitat_id = $this->getLocalitatId($localitat_codi, $dat['municipi_id']);
+                    if ($localitat_id != -1) {
+                        $dat['localitat_id'] = $localitat_id;
+                        debug($dat['localitat_id']);
+                    }
+                }
+
+                // Posem els valors de l'array a la taula
                 $centre->set($dat);
 
                 if (!$this->save($centre)) {

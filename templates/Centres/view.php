@@ -4,6 +4,7 @@
  * @var \App\Model\Entity\Centre $centre
  */
 ?>
+
 <div class="row">
     <aside class="column">
         <div class="side-nav">
@@ -118,6 +119,14 @@
                 </div>
                 <?php endif; ?>
             </div>
+
+            <h4><?= __('Mapa') ?></h4>
+            
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=1.3393020629882812%2C41.498292501398545%2C1.826133728027344%2C41.73775991204252&amp;layer=mapnik"
+                style="border: 1px solid black"></iframe><br/>
+            <small><a href="https://www.openstreetmap.org/#map=12/41.6181/1.5827">Mostra un mapa més gran</a></small>
+
         </div>
     </div>
 </div>
