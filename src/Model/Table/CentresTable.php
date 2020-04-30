@@ -191,8 +191,6 @@ class CentresTable extends Table
             ->limit(1);
         $olddata = $query->toArray();
         if (!empty($olddata)) {
-            // debug($olddata);
-            //$localitat_id = $this->get($olddata[0]['id']);
             $localitat_id = $olddata[0]['id'];
         } else {
             $localitat_id = -1;
@@ -324,7 +322,7 @@ class CentresTable extends Table
                     $localitat_id = $this->getLocalitatId($localitat_codi, $dat['municipi_id']);
                     if ($localitat_id != -1) {
                         $dat['localitat_id'] = $localitat_id;
-                        debug($dat['localitat_id']);
+                        // debug($dat['localitat_id']);
                     }
                 }
 

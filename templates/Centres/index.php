@@ -6,8 +6,9 @@
 ?>
 <div class="centres index content">
     <div class="float-right">
-        <?= $this->Html->link(__('New Centre'), ['action' => 'add'], ['class' => 'button']) ?>
-        <?= $this->Html->link(__('Import'), ['action' => 'import'], ['class' => 'button button-outline']) ?>
+        <?= $this->Html->link(__('Cerca'), ['action' => 'search'], ['class' => 'button']) ?>
+        <?= $this->Html->link(__('Afegeix Centre'), ['action' => 'add'], ['class' => 'button button-outline']) ?>
+        <?= $this->Html->link(__('Importa CSV'), ['action' => 'import'], ['class' => 'button button-outline']) ?>
     </div>
     <h3><?= __('Centres') ?></h3>
     <div class="table-responsive">
@@ -40,7 +41,7 @@
                 <tr>
                     <!--<td><?= $this->Number->format($centre->id) ?></td>-->
                     <td><?= h($centre->codi) ?></td>
-                    <td><?= h($centre->denominacio_completa) ?></td>
+                    <td><?= $this->Html->link(h($centre->denominacio_completa), ['action' => 'view', $centre->id]) ?></td>
                     <td><?= $centre->has('naturalesa') ? $this->Html->link($centre->naturalesa->nom, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalesa->id]) : '' ?></td>
                     <td><?= $centre->has('titularitat') ? $this->Html->link($centre->titularitat->nom, ['controller' => 'Titularitats', 'action' => 'view', $centre->titularitat->id]) : '' ?></td>
                     <td><?= h($centre->adreca) ?></td>

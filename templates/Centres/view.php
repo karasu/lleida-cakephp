@@ -4,20 +4,23 @@
  * @var \App\Model\Entity\Centre $centre
  */
 ?>
+<?= $this->Html->css("https://unpkg.com/leaflet@1.6.0/dist/leaflet.css") ?>
+<?= $this->Html->script("https://unpkg.com/leaflet@1.6.0/dist/leaflet.js") ?>
+
 
 <div class="row">
     <aside class="column">
         <div class="side-nav">
-            <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('Edit Centre'), ['action' => 'edit', $centre->id], ['class' => 'side-nav-item']) ?>
-            <?= $this->Form->postLink(__('Delete Centre'), ['action' => 'delete', $centre->id], ['confirm' => __('Are you sure you want to delete # {0}?', $centre->id), 'class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('List Centres'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('New Centre'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+            <h4 class="heading"><?= __('Accions') ?></h4>
+            <?= $this->Html->link(__('Edita centre'), ['action' => 'edit', $centre->id], ['class' => 'side-nav-item']) ?>
+            <?= $this->Form->postLink(__('Esborra centre'), ['action' => 'delete', $centre->id], ['confirm' => __('Are you sure you want to delete # {0}?', $centre->id), 'class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Llista els centres'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Nou centre'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
         <div class="centres view content">
-            <h3><?= h($centre->id) ?></h3>
+            <h3><?= h($centre->codi) ?> - <?= h($centre->denominacio_completa)?></h3>
             <table>
                 <tr>
                     <th><?= __('Codi') ?></th>
@@ -29,11 +32,11 @@
                 </tr>
                 <tr>
                     <th><?= __('Naturalesa') ?></th>
-                    <td><?= $centre->has('naturalesa') ? $this->Html->link($centre->naturalesa->id, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalesa->id]) : '' ?></td>
+                    <td><?= $centre->has('naturalesa') ? $this->Html->link($centre->naturalesa->id, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalesa->id]) : '--' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Titularitat') ?></th>
-                    <td><?= $centre->has('titularitat') ? $this->Html->link($centre->titularitat->id, ['controller' => 'Titularitats', 'action' => 'view', $centre->titularitat->id]) : '' ?></td>
+                    <td><?= $centre->has('titularitat') ? $this->Html->link($centre->titularitat->nom, ['controller' => 'Titularitats', 'action' => 'view', $centre->titularitat->id]) : '--' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Adreça') ?></th>
@@ -53,15 +56,15 @@
                 </tr>
                 <tr>
                     <th><?= __('Municipi') ?></th>
-                    <td><?= $centre->has('municipi') ? $this->Html->link($centre->municipi->id, ['controller' => 'Municipis', 'action' => 'view', $centre->municipi->id]) : '' ?></td>
+                    <td><?= $centre->has('municipi') ? $this->Html->link($centre->municipi->nom, ['controller' => 'Municipis', 'action' => 'view', $centre->municipi->id]) : '--' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Districte') ?></th>
-                    <td><?= $centre->has('districte') ? $this->Html->link($centre->districte->id, ['controller' => 'Districtes', 'action' => 'view', $centre->districte->id]) : '' ?></td>
+                    <td><?= $centre->has('districte') ? $this->Html->link($centre->districte->id, ['controller' => 'Districtes', 'action' => 'view', $centre->districte->id]) : '--' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Localitat') ?></th>
-                    <td><?= $centre->has('localitat') ? $this->Html->link($centre->localitat->id, ['controller' => 'Localitats', 'action' => 'view', $centre->localitat->id]) : '' ?></td>
+                    <td><?= $centre->has('localitat') ? $this->Html->link($centre->localitat->nom, ['controller' => 'Localitats', 'action' => 'view', $centre->localitat->id]) : '--' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Zona Educativa') ?></th>
@@ -121,11 +124,28 @@
             </div>
 
             <h4><?= __('Mapa') ?></h4>
-            
-            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=1.3393020629882812%2C41.498292501398545%2C1.826133728027344%2C41.73775991204252&amp;layer=mapnik"
-                style="border: 1px solid black"></iframe><br/>
-            <small><a href="https://www.openstreetmap.org/#map=12/41.6181/1.5827">Mostra un mapa més gran</a></small>
+
+            <div id="openstreetmap"></div>
+            <script>
+                var geo_x = '<?= $this->Number->format($centre->coordenades_geo_y) ?>'.replace(',', '.');
+                var geo_y = '<?= $this->Number->format($centre->coordenades_geo_x) ?>'.replace(',', '.');
+                var zoom = 17;
+
+                var mymap = L.map('openstreetmap').setView([geo_x, geo_y], zoom);
+
+                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                    maxZoom: 18,
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    id: 'mapbox/streets-v11',
+                    tileSize: 512,
+                    zoomOffset: -1
+                }).addTo(mymap);
+                
+                var marker = L.marker([geo_x, geo_y]).addTo(mymap);
+                // marker.bindPopup("<?= h($centre->denominacio_completa) ?>").openPopup();
+            </script>
 
         </div>
     </div>

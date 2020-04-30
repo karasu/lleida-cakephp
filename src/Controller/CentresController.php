@@ -118,6 +118,13 @@ class CentresController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
+    /**
+     * Import method
+     *
+     * @param string|null $id Centre id.
+     * @return \Cake\Http\Response|null|void Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
     public function import() {
         if ($this->request->is('post')) {
             $data = $this->request->getData();
@@ -128,5 +135,44 @@ class CentresController extends AppController
             }
             $this->Flash->error(__('Centres data could not be imported. Please, try again'));
         }
+    }
+
+    /**
+     * Search method
+     *
+     * @param string|null $id Centre id.
+     * @return \Cake\Http\Response|null|void Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function search() {
+        // $centre = $this->Centres->newEmptyEntity();
+        if ($this->request->is('post')) {
+            $data = $this->request->getData();
+            // Remove empty array elements
+            $data = array_filter($data, fn($value) => !is_null($value) && $value !== '');
+            $query = $this->Centres->find('all')
+                ->where($data)
+                ->limit(100);
+            $number = $query->count();
+            if ($number <= 0) {
+                $this->Flash->error(__('Cannot find any centre! Please, try again.'));
+            }
+            else if ($number == 1) {
+                $row = $query->first();
+                debug($row['id']);
+                return $this->redirect(['action' => 'view', $row['id']]);
+                // $this->view($row['id']);
+            }
+            else {
+                $this->Flash->error(__('Too many centres found. Please, try again.'));
+            }
+        }
+        $naturaleses = $this->Centres->Naturaleses->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $titularitats = $this->Centres->Titularitats->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $municipis = $this->Centres->Municipis->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $districtes = $this->Centres->Districtes->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $localitats = $this->Centres->Localitats->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $estudis = $this->Centres->Estudis->find('list', ['limit' => 200]);
+        $this->set(compact('naturaleses', 'titularitats', 'municipis', 'districtes', 'localitats', 'estudis'));
     }
 }

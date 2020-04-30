@@ -47,10 +47,12 @@ $base_url = 'http://192.168.1.115:8765';
         <div class="top-nav-title">
             <a href="/"><span>"Lleida"</span> - Intersindical-CSC</a>
         </div>
+        <!--
         <div class="top-nav-links">
             <a target="_blank" href="<?= $base_url ?>/Centres/">Veure tots els centres de Catalunya</a>
-            <!--<a target="_blank" href="https://api.cakephp.org/4/">API</a>-->
+            <a target="_blank" href="https://api.cakephp.org/4/">API</a>
         </div>
+-->
     </nav>
     <main class="main">
         <div class="container">
