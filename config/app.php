@@ -18,7 +18,7 @@ return [
      * true: Errors and warnings shown.
      */
     //'debug' => filter_var(env('DEBUG', false), FILTER_VALIDATE_BOOLEAN),
-    'debug' => false,
+    'debug' => filter_var(env('DEBUG', false), FILTER_VALIDATE_BOOLEAN),
 
     /*
      * Configure basic information about the application.
@@ -52,7 +52,7 @@ return [
         'namespace' => 'App',
         'encoding' => env('APP_ENCODING', 'UTF-8'),
         'defaultLocale' => env('APP_DEFAULT_LOCALE', 'ca_ES'),
-        'defaultTimezone' => env('APP_DEFAULT_TIMEZONE', 'UTC'),
+        'defaultTimezone' => env('APP_DEFAULT_TIMEZONE', 'Europe/Berlin'),
         'base' => false,
         'dir' => 'src',
         'webroot' => 'webroot',
@@ -89,7 +89,7 @@ return [
      * enable timestamping regardless of debug value.
      */
     'Asset' => [
-        //'timestamp' => true,
+        // 'timestamp' => true,
         // 'cacheTime' => '+1 year'
     ],
 

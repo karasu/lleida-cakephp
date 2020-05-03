@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use Cake\ORM\TableRegistry;
+
 /**
  * Centres Controller
  *
@@ -21,7 +23,7 @@ class CentresController extends AppController
         $this->paginate = [
             'contain' => ['Naturaleses', 'Titularitats', 'Municipis', 'Districtes', 'Localitats'],
         ];
-
+        
         $centres = $this->paginate($this->Centres);
 
         $this->set(compact('centres'));
@@ -126,7 +128,8 @@ class CentresController extends AppController
      * @return \Cake\Http\Response|null|void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function import() {
+    public function import()
+    {
         if ($this->request->is('post')) {
             $data = $this->request->getData();
             if ($this->Centres->import($data['csv']))
@@ -149,29 +152,28 @@ class CentresController extends AppController
         // $centre = $this->Centres->newEmptyEntity();
         if ($this->request->is('post')) {
             $data = $this->request->getData();
+
             // Remove empty array elements
             $data = array_filter($data, fn($value) => !is_null($value) && $value !== '');
+            
             $query = $this->Centres->find('all')
                 ->where($data)
-                ->limit(2);
+                ->limit(100);
+
             $number = $query->count();
+
             if ($number <= 0) {
                 $this->Flash->error(__('Cannot find any centre! Please, try again.'));
             }
             else if ($number == 1) {
                 $row = $query->first();
-                // debug($row['id']);
                 return $this->redirect(['action' => 'view', $row['id']]);
             }
             else {
-                // TODO: Show found centres!
-                $this->Flash->error(__('Too many centres found.'));
-
-                $query = $this->Centres->find('all')
-                    ->where($data);
-                $this->set('centres', $this->paginate($query));
-                // TODO: Copiar index.php a results.php
-                return $this->redirect(['action' => 'index']);
+                // Show search results
+                debug($data);
+                $data['action'] = 'results';
+                return $this->redirect($data);
             }
         }
         $naturaleses = $this->Centres->Naturaleses->find('list', ['limit' => 200, 'valueField' => 'nom']);
@@ -183,4 +185,26 @@ class CentresController extends AppController
         $this->set(compact('naturaleses', 'titularitats', 'municipis', 'districtes', 'localitats', 'estudis'));
     }
 
+    public function results($data)
+    {
+        $this->paginate = [
+            'contain' => ['Naturaleses', 'Titularitats', 'Municipis', 'Districtes', 'Localitats'],
+        ];
+
+        debug($data);
+
+        $where = array();
+        // Add table name to fields
+        foreach ($data as $k=>$v) {
+            $where['Centres.'.$k] = $v;
+        }
+
+        $query = $this->Centres->find('all')
+            ->where($where)
+            ->limit(100);
+        
+        debug($query);
+
+        $this->set('centres', $this->paginate($query));
+    }
 }
