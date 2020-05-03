@@ -156,8 +156,12 @@ class CentresController extends AppController
             // Remove empty array elements
             $data = array_filter($data, fn($value) => !is_null($value) && $value !== '');
             
+            foreach ($data as $k=>$v) {
+                $data2['Centres.'.$k] = $v;
+            }
+            
             $query = $this->Centres->find('all')
-                ->where($data)
+                ->where($data2)
                 ->limit(100);
 
             $number = $query->count();
@@ -171,9 +175,7 @@ class CentresController extends AppController
             }
             else {
                 // Show search results
-                debug($data);
-                $data['action'] = 'results';
-                return $this->redirect($data);
+                return $this->setAction('results', $query);
             }
         }
         $naturaleses = $this->Centres->Naturaleses->find('list', ['limit' => 200, 'valueField' => 'nom']);
@@ -185,25 +187,12 @@ class CentresController extends AppController
         $this->set(compact('naturaleses', 'titularitats', 'municipis', 'districtes', 'localitats', 'estudis'));
     }
 
-    public function results($data)
+    public function results($query)
     {
         $this->paginate = [
             'contain' => ['Naturaleses', 'Titularitats', 'Municipis', 'Districtes', 'Localitats'],
+            'maxLimit' => 25,
         ];
-
-        debug($data);
-
-        $where = array();
-        // Add table name to fields
-        foreach ($data as $k=>$v) {
-            $where['Centres.'.$k] = $v;
-        }
-
-        $query = $this->Centres->find('all')
-            ->where($where)
-            ->limit(100);
-        
-        debug($query);
 
         $this->set('centres', $this->paginate($query));
     }
