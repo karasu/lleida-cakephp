@@ -100,6 +100,7 @@ class DelegacionsTable extends Table
         $file->setCsvControl(';');
 
         $header = $file->fgetcsv();
+        $processed_ids = array();
 
         while (!$file->eof()) {
             $row = $file->fgetcsv();
@@ -114,7 +115,8 @@ class DelegacionsTable extends Table
                 }
             }
 
-            if (isset($id) && isset($nom)) {              
+            if (!in_array($id, $processed_ids) && isset($id) && isset($nom)) {   
+                $processed_ids[] = $id;           
                 try {
                     $delegacio = $this->get($id);
                 } catch (RecordNotFoundException $e) {

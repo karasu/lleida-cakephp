@@ -22,9 +22,21 @@ class CentresController extends AppController
     {
         $this->paginate = [
             'contain' => ['Naturaleses', 'Titularitats', 'Municipis', 'Districtes', 'Localitats'],
+            'maxLimit' => 20,
         ];
-        
-        $centres = $this->paginate($this->Centres);
+
+        $session = $this->getRequest()->getSession();
+        // $searchQuery = $session->read('SearchQuery');
+        $searchFilter = $session->read('SearchFilter');
+
+        if ($searchFilter != null) {
+            $searchQuery = $this->Centres->find('all')->where($searchFilter);
+            $centres = $this->paginate($searchQuery);
+            // $session->write('SearchQuery', null);
+        }
+        else {
+            $centres = $this->paginate($this->Centres);
+        }
 
         $this->set(compact('centres'));
     }
@@ -157,11 +169,11 @@ class CentresController extends AppController
             $data = array_filter($data, fn($value) => !is_null($value) && $value !== '');
             
             foreach ($data as $k=>$v) {
-                $data2['Centres.'.$k] = $v;
+                $searchFilter['Centres.'.$k] = $v;
             }
             
             $query = $this->Centres->find('all')
-                ->where($data2)
+                ->where($searchFilter)
                 ->limit(100);
 
             $number = $query->count();
@@ -175,7 +187,10 @@ class CentresController extends AppController
             }
             else {
                 // Show search results
-                return $this->setAction('results', $query);
+                //return $this->setAction('results', $query);
+                //$session = $this->getRequest()->getSession()->write('SearchQuery', $query);
+                $session = $this->getRequest()->getSession()->write('SearchFilter', $searchFilter);
+                return $this->redirect(['action' => 'index']);
             }
         }
         $naturaleses = $this->Centres->Naturaleses->find('list', ['limit' => 200, 'valueField' => 'nom']);
@@ -187,13 +202,8 @@ class CentresController extends AppController
         $this->set(compact('naturaleses', 'titularitats', 'municipis', 'districtes', 'localitats', 'estudis'));
     }
 
-    public function results($query)
-    {
-        $this->paginate = [
-            'contain' => ['Naturaleses', 'Titularitats', 'Municipis', 'Districtes', 'Localitats'],
-            'maxLimit' => 25,
-        ];
-
-        $this->set('centres', $this->paginate($query));
+    public function removeSearchFilter() {
+        $session = $this->getRequest()->getSession()->write('SearchFilter', null);
+        return $this->redirect(['action' => 'index']);
     }
 }

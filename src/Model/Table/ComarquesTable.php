@@ -111,6 +111,7 @@ class ComarquesTable extends Table
         $file->setCsvControl(';');
 
         $header = $file->fgetcsv();
+        $processed_noms = array();
 
         while (!$file->eof()) {
             $row = $file->fgetcsv();
@@ -126,7 +127,8 @@ class ComarquesTable extends Table
                 }
             }
 
-            if (isset($delegacio_id) && isset($id) && isset($nom)) {              
+            if (!in_array($nom, $processed_noms) && isset($delegacio_id) && isset($id) && isset($nom)) {              
+                $processed_noms[] = $nom;
                 try {
                     $comarca = $this->get($id);
                 } catch (RecordNotFoundException $e) {

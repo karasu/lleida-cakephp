@@ -364,17 +364,17 @@
     },
     {
         "name": "cakephp/debug_kit",
-        "version": "4.1.1",
-        "version_normalized": "4.1.1.0",
+        "version": "4.1.2",
+        "version_normalized": "4.1.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/cakephp/debug_kit.git",
-            "reference": "e98c06eb05a084cb43832d4bc3f034bb44913c61"
+            "reference": "14d6b6b13286ce67e73722c422c09ed82a7b0e65"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/e98c06eb05a084cb43832d4bc3f034bb44913c61",
-            "reference": "e98c06eb05a084cb43832d4bc3f034bb44913c61",
+            "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/14d6b6b13286ce67e73722c422c09ed82a7b0e65",
+            "reference": "14d6b6b13286ce67e73722c422c09ed82a7b0e65",
             "shasum": ""
         },
         "require": {
@@ -392,7 +392,7 @@
         "suggest": {
             "ext-pdo_sqlite": "DebugKit needs to store panel data in a database. SQLite is simple and easy to use."
         },
-        "time": "2020-04-13T17:28:17+00:00",
+        "time": "2020-04-26T23:32:27+00:00",
         "type": "cakephp-plugin",
         "installation-source": "dist",
         "autoload": {
