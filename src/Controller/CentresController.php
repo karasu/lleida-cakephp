@@ -172,6 +172,10 @@ class CentresController extends AppController
                 $searchFilter['Centres.'.$k] = $v;
             }
             
+            if ($searchFilter == null || empty($searchFilter)) {
+                return $this->redirect(['action' => 'index']);
+            }
+
             $query = $this->Centres->find('all')
                 ->where($searchFilter)
                 ->limit(100);

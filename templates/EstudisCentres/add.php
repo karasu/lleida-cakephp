@@ -17,6 +17,8 @@
             <fieldset>
                 <legend><?= __('Add Estudis Centre') ?></legend>
                 <?php
+                    echo $this->Form->control('centre', ['options' => $centres]);
+                    echo $this->Form->control('estudi', ['options' => $estudis]);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

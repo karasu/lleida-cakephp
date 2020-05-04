@@ -118,12 +118,14 @@ class ComarquesTable extends Table
             // for each header field 
  			foreach ($header as $k=>$head) {
                 $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
-                if ($head == 'Codi delegació' && isset($row[$k])) {
-                    $delegacio_id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
-                } else if ($head == 'Codi comarca' && isset($row[$k])) {
-                    $id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
-                } else if ($head == 'Nom comarca' && isset($row[$k])) {
-                   $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                if (isset($row[$k])) {
+                    if ($head == 'Codi delegació') {
+                        $delegacio_id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
+                    } else if ($head == 'Codi comarca') {
+                        $id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
+                    } else if ($head == 'Nom comarca') {
+                        $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                    }
                 }
             }
 

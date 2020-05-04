@@ -21,7 +21,8 @@
             }
 
             .full-height {
-                height: 100vh;
+                /*height: 100vh;*/
+                height: 70vh;
             }
 
             .flex-center {
@@ -66,10 +67,11 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-                <!--<div class="title m-b-md">Lleida</div>-->
+                <div class="title m-b-md">Lleida</div>
                 <div class="links">
                     <a href="http://localhost:8765/help">Ajuda</a>
                     <a href="http://localhost:8765/centres">Centres</a>
+                    <a href="http://localhost:8765/comentaris">Comentaris</a>
                     <a href="http://localhost:8765/estudis">Estudis</a>
                     <a href="http://localhost:8765/delegacions">Delegacions</a>
                     <a href="http://localhost:8765/comarques">Comarques</a>

@@ -7,7 +7,7 @@
 <div class="comarques index content">
     <div class="float-right">
         <?= $this->Html->link(__('New Comarca'), ['action' => 'add'], ['class' => 'button']) ?>
-        <?= $this->Html->link(__('Import'), ['action' => 'import'], ['class' => 'button button-outline']) ?>
+        <?= $this->Html->link(__('Importa CSV'), ['action' => 'import'], ['class' => 'button button-outline']) ?>
     </div>
     
     <h3><?= __('Comarques') ?></h3>

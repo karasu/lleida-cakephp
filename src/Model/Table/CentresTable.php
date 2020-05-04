@@ -236,8 +236,7 @@ class CentresTable extends Table
         // Codi centre	Denominació completa	Codi naturalesa	Nom naturalesa	Codi titularitat	Nom titularitat	Adreça	Codi postal
         // Telèfon	FAX	Codi delegació	Nom delegació	Codi comarca	Nom comarca	Codi municipi	Nom municipi	Codi districte municipal
         // Nom DM	Codi localitat	Nom localitat	Zona educativa	Coordenades UTM X	Coordenades UTM Y	Coordenades GEO X	Coordenades GEO Y
-        // E-mail centre	EINF1C	EINF2C	EPRI	ESO	BATX	AA01	CFPM	PPAS	AA03	CFPS	EE	IFE	PFI	PA01	CFAM	PA02	CFAS
-        // ESDI	ESCM	ESCS	ADR	CRBC	IDI	DANE	DANP	DANS	MUSE	MUSP	MUSS	TEGM	TEGS	ESTR	ADULTS
+        // E-mail centre
 
         $dat = array();
         while (!$file->eof()) {

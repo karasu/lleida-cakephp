@@ -5,7 +5,10 @@
  */
 ?>
 <div class="estudisCentres index content">
-    <?= $this->Html->link(__('New Estudis Centre'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+    <div class="float-right">
+        <?= $this->Html->link(__('New Estudis Centre'), ['action' => 'add'], ['class' => 'button']) ?>
+        <?= $this->Html->link(__('Importa CSV'), ['action' => 'import'], ['class' => 'button button-outline']) ?>
+    </div>
     <h3><?= __('Estudis Centres') ?></h3>
     <div class="table-responsive">
         <table>

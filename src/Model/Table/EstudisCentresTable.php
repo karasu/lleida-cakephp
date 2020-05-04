@@ -71,4 +71,72 @@ class EstudisCentresTable extends Table
 
         return $rules;
     }
-}
+    
+    public function import($uploadedFile) : bool
+    {
+        // Check that the upload was ok and the uploaded file is a csv one
+        if ($uploadedFile->getError() != 0 || $uploadedFile->getClientMediaType() != 'text/csv')
+        {
+            return false;
+        }
+
+        // move file
+        $filename = '/tmp/lleida-import.csv';
+        $uploadedFile->moveTo($filename);
+
+        // open file
+        $file = new SplFileObject($filename);
+        $file->setFlags(SplFileObject::READ_CSV | SplFileObject::READ_AHEAD | SplFileObject::SKIP_EMPTY | SplFileObject::DROP_NEW_LINE);
+        $file->setCsvControl(';');
+
+        $header = $file->fgetcsv();
+
+        $estudis_codis = array(
+            'EINF1C', 'EINF2C', 'EPRI', 'ESO', 'BATX', 'AA01', 'CFPM', 'PPAS', 'AA03', 'CFPS', 'EE', 'IFE',
+            'PFI', 'PA01', 'CFAM', 'PA02', 'CFAS', 'ESDI', 'ESCM', 'ESCS', 'ADR', 'CRBC', 'IDI', 'DANE',
+            'DANP', 'DANS', 'MUSE', 'MUSP', 'MUSS', 'TEGM', 'TEGS', 'ESTR', 'ADULTS');
+        $estudis = array();
+
+        while (!$file->eof()) {
+            $row = $file->fgetcsv();
+            // for each header field 
+ 			foreach ($header as $k=>$head) {
+                $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
+                if (isset($row[$k])) {
+                    if ($head == 'Codi centre') {
+                        $centre_codi = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                    } else if (in_array($head, $estudis_codis)) {
+                        $estudis[] = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
+                    }
+                }
+            }
+
+            if (isset($centre_codi) && count($estudis) > 0) {
+                try {
+                    // TODO:
+                    // 1. Carregar la taula centres
+                    // 2. Buscar el centre amb codi de centre centre_codi
+                    // 3. Carregar la taule estudis
+                    // 4. Buscar id de cadascun dels estudis a $estudis
+                    // 5. Afegir a aquesta taula EstudisCentres tantes entrades
+                    //    com $estudis on es relacioni el id del centre amb el id dels estudis
+                    // Què passa si ja existeix?
+                    //$comarca = $this->get($id);
+                } catch (RecordNotFoundException $e) {
+                    //$comarca = $this->newEmptyEntity();
+                    //$comarca->id = $id;
+                }
+          
+                /*
+                if (!$this->save($estudisCentres)) {
+                    // No podem guardar el registre. Error!
+                    debug($comarca->getErrors());
+                    $file = null;
+                    return false;
+                }
+                */
+            }
+        }
+        $file = null;
+        return true;
+    }}
