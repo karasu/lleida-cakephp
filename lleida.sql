@@ -93,6 +93,14 @@ CREATE TABLE centres (
     FOREIGN KEY titularitat_key (titularitat_id) REFERENCES titularitats(id)
 ) CHARSET=utf8mb4;
 
+CREATE TABLE comentaris (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    centre_id INT NOT NULL,
+    timestamp DATETIME NOT NULL,
+    text TEXT NOT NULL,
+    FOREIGN KEY centres_key (centre_id) REFERENCES centres(id)
+) CHARSET=utf8mb4;
+
 CREATE TABLE estudis_centres (
     centre_id INT NOT NULL,
     estudi_id VARCHAR(255),
