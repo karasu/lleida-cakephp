@@ -33,7 +33,7 @@ class NaturalesesController extends AppController
     public function view($id = null)
     {
         $naturalesa = $this->Naturaleses->get($id, [
-            'contain' => [],
+            'contain' => ['Centres'],
         ]);
 
         $this->set('naturalesa', $naturalesa);

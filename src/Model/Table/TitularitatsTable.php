@@ -112,18 +112,17 @@ class TitularitatsTable extends Table
  			foreach ($header as $k=>$head) {
                 if (isset($row[$k])) {
                     $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
-                    $value = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
                     if ($head == 'Codi titularitat') {
-                        $id = intval($value);
+                        $id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
                     }
                     else if ($head == 'Nom titularitat') {
-                        $nom = $value;
+                        $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
                     }
                 }
             }
 
-            if (!in_array($id, $processed_ids) && isset($id) && isset($nom)) {     
-                $processed_ids[] = $id;         
+            if (!in_array($id, $processed_ids) && isset($id) && isset($nom)) {
+                $processed_ids[] = $id;
                 try {
                     $titularitat = $this->get($id);
                 } catch (RecordNotFoundException $e) {

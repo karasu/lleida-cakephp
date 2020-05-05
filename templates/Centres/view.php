@@ -32,7 +32,7 @@
                 </tr>
                 <tr>
                     <th><?= __('Naturalesa') ?></th>
-                    <td><?= $centre->has('naturalesa') ? $this->Html->link($centre->naturalesa->id, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalesa->id]) : '--' ?></td>
+                    <td><?= $centre->has('naturalesa') ? $this->Html->link($centre->naturalesa->nom, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalesa->id]) : '--' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Titularitat') ?></th>
@@ -78,6 +78,7 @@
                     <th><?= __('Id') ?></th>
                     <td><?= $this->Number->format($centre->id) ?></td>
                 </tr>
+                <!--
                 <tr>
                     <th><?= __('Coord Utm X') ?></th>
                     <td><?= $this->Number->format($centre->coordenades_utm_x) ?></td>
@@ -94,21 +95,23 @@
                     <th><?= __('Coord Geo Y') ?></th>
                     <td><?= $this->Number->format($centre->coordenades_geo_y) ?></td>
                 </tr>
+                -->
             </table>
+            <br />
             <div class="related">
                 <h4><?= __('Estudis') ?></h4>
                 <?php if (!empty($centre->estudis)) : ?>
                 <div class="table-responsive">
                     <table>
                         <tr>
-                            <th><?= __('Id') ?></th>
+                            <!-- <th><?= __('Id') ?></th> -->
                             <th><?= __('Codi') ?></th>
                             <th><?= __('Nom') ?></th>
                             <th class="actions"><?= __('Actions') ?></th>
                         </tr>
                         <?php foreach ($centre->estudis as $estudis) : ?>
                         <tr>
-                            <td><?= h($estudis->id) ?></td>
+                            <!-- <td><?= h($estudis->id) ?></td> -->
                             <td><?= h($estudis->codi) ?></td>
                             <td><?= h($estudis->nom) ?></td>
                             <td class="actions">
@@ -123,6 +126,8 @@
                 <?php endif; ?>
             </div>
 
+            <br />
+            <div class="related">
             <h4><?= __('Mapa') ?></h4>
 
             <div id="openstreetmap"></div>
@@ -146,7 +151,7 @@
                 var marker = L.marker([geo_x, geo_y]).addTo(mymap);
                 // marker.bindPopup("<?= h($centre->denominacio_completa) ?>").openPopup();
             </script>
-
+            </div>
         </div>
     </div>
 </div>

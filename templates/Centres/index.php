@@ -29,10 +29,12 @@
                     <th><?= $this->Paginator->sort('districte_id') ?></th>
                     <th><?= $this->Paginator->sort('localitat_id') ?></th>
                     <th><?= $this->Paginator->sort('zona_educativa') ?></th>
+                    <!--
                     <th><?= $this->Paginator->sort('coordenades_utm_x', __('Utm X')) ?></th>
                     <th><?= $this->Paginator->sort('coordenades_utm_y', __('Utm Y')) ?></th>
                     <th><?= $this->Paginator->sort('coordenades_geo_x', __('Geo X')) ?></th>
                     <th><?= $this->Paginator->sort('coordenades_geo_y', __('Geo Y')) ?></th>
+                    -->
                     <th><?= $this->Paginator->sort('email_centre', __('Correu electrònic')) ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
@@ -53,10 +55,12 @@
                     <td><?= $centre->has('districte') ? $this->Html->link($centre->districte->nom, ['controller' => 'Districtes', 'action' => 'view', $centre->districte->id]) : '' ?></td>
                     <td><?= $centre->has('localitat') ? $this->Html->link($centre->localitat->nom, ['controller' => 'Localitats', 'action' => 'view', $centre->localitat->id]) : '' ?></td>
                     <td><?= h($centre->zona_educativa) ?></td>
+                    <!--
                     <td><?= $this->Number->format($centre->coordenades_utm_x) ?></td>
                     <td><?= $this->Number->format($centre->coordenades_utm_y) ?></td>
                     <td><?= $this->Number->format($centre->coordenades_geo_x) ?></td>
                     <td><?= $this->Number->format($centre->coordenades_geo_y) ?></td>
+                    -->
                     <td><?= h($centre->email_centre) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $centre->id]) ?>

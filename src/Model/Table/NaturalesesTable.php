@@ -44,6 +44,10 @@ class NaturalesesTable extends Table
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
+        $this->hasMany('Centres', [
+            'foreignKey' => 'naturalesa_id',
+        ]);
+
         $this->setEntityClass('App\Model\Entity\Naturalesa');
     }
 
@@ -107,13 +111,12 @@ class NaturalesesTable extends Table
             // for each header field 
  			foreach ($header as $k=>$head) {
                 if (isset($row[$k])) {
-                    $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
-                    $value = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
+                    $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");                
                     if ($head == 'Codi naturalesa') {
-                        $id = intval($value);
+                        $id = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
                     }
                     else if ($head == 'Nom naturalesa') {
-                        $nom = $value;
+                        $nom = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
                     }
                 }
             }

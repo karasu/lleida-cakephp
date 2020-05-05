@@ -10,6 +10,8 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $nom
+ *
+ * @property \App\Model\Entity\Centre[] $centres
  */
 class Naturalesa extends Entity
 {
@@ -25,5 +27,6 @@ class Naturalesa extends Entity
     protected $_accessible = [
         'id' => true,
         'nom' => true,
+        'centres' => true,
     ];
 }
