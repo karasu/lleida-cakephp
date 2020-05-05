@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
 
 use \SplFileObject;
 use Cake\Datasource\Exception\RecordNotFoundException;
+use Cake\ORM\TableRegistry;
 
 /**
  * EstudisCentres Model
@@ -91,52 +92,72 @@ class EstudisCentresTable extends Table
 
         $header = $file->fgetcsv();
 
-        $estudis_codis = array(
+        $estudis_codis_all = array(
             'EINF1C', 'EINF2C', 'EPRI', 'ESO', 'BATX', 'AA01', 'CFPM', 'PPAS', 'AA03', 'CFPS', 'EE', 'IFE',
             'PFI', 'PA01', 'CFAM', 'PA02', 'CFAS', 'ESDI', 'ESCM', 'ESCS', 'ADR', 'CRBC', 'IDI', 'DANE',
             'DANP', 'DANS', 'MUSE', 'MUSP', 'MUSS', 'TEGM', 'TEGS', 'ESTR', 'ADULTS');
-        $estudis = array();
+
+        $centres_table = TableRegistry::getTableLocator()->get('Centres');
+        $estudis_table = TableRegistry::getTableLocator()->get('Estudis');
 
         while (!$file->eof()) {
+            $estudis_codis = array();
             $row = $file->fgetcsv();
             // for each header field 
  			foreach ($header as $k=>$head) {
-                $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
                 if (isset($row[$k])) {
+                    $head = mb_convert_encoding($head, "UTF-8", "ISO-8859-1");
                     if ($head == 'Codi centre') {
                         $centre_codi = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
-                    } else if (in_array($head, $estudis_codis)) {
-                        $estudis[] = intval(mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1"));
+                    } else if (in_array($head, $estudis_codis_all)) {
+                        $estudis_codis[] = mb_convert_encoding($row[$k], "UTF-8", "ISO-8859-1");
                     }
                 }
             }
 
-            if (isset($centre_codi) && count($estudis) > 0) {
+            if (isset($centre_codi) && count($estudis_codis) > 0) {
                 try {
-                    // TODO:
-                    // 1. Carregar la taula centres
-                    // 2. Buscar el centre amb codi de centre centre_codi
-                    // 3. Carregar la taule estudis
-                    // 4. Buscar id de cadascun dels estudis a $estudis
-                    // 5. Afegir a aquesta taula EstudisCentres tantes entrades
-                    //    com $estudis on es relacioni el id del centre amb el id dels estudis
-                    // Què passa si ja existeix?
-                    //$comarca = $this->get($id);
+                    // Buscar el centre amb codi de centre centre_codi
+                    $centresQuery = $centres_table->find('all')
+                        ->where(['codi' => $centre_codi]);
+
+                    foreach ($centresQuery as $centre) {
+                        $centre_id = $centre->id;
+                    }
+                    $centresQuery = null;
+
+                    if (!empty($centre_id)) {
+                        // Buscar id de cadascun dels estudis a $estudis
+                        foreach ($estudis_codis as $estudis_codi) {
+                            if (!empty($estudis_codi)) {
+                                $estudisQuery = $estudis_table->find('all')
+                                    ->where(['codi' => $estudis_codi]);
+                                debug($estudisQuery);
+                                foreach ($estudisQuery as $estudi) {
+                                    // Afegir a aquesta taula EstudisCentres tantes entrades
+                                    // com $estudis_codis on es relacioni el id del centre amb el id dels estudis
+
+                                    $estudisCentre = $this->newEmptyEntity();
+                                    $estudisCentre->centre_id = $centre_id;
+                                    $estudisCentre->estudi_id = $estudi->id;
+
+                                    if (!$this->save($estudisCentre)) {
+                                        return false;
+                                    }
+                                }
+                                $estudisQuery = null;
+                            }
+                        }
+                    }
+                    
                 } catch (RecordNotFoundException $e) {
-                    //$comarca = $this->newEmptyEntity();
-                    //$comarca->id = $id;
-                }
-          
-                /*
-                if (!$this->save($estudisCentres)) {
-                    // No podem guardar el registre. Error!
-                    debug($comarca->getErrors());
+                    debug($e);
                     $file = null;
                     return false;
                 }
-                */
             }
         }
         $file = null;
         return true;
-    }}
+    }
+}
