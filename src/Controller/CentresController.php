@@ -26,13 +26,11 @@ class CentresController extends AppController
         ];
 
         $session = $this->getRequest()->getSession();
-        // $searchQuery = $session->read('SearchQuery');
         $searchFilter = $session->read('SearchFilter');
 
         if ($searchFilter != null) {
             $searchQuery = $this->Centres->find('all')->where($searchFilter);
             $centres = $this->paginate($searchQuery);
-            // $session->write('SearchQuery', null);
         }
         else {
             $centres = $this->paginate($this->Centres);

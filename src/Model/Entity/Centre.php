@@ -63,6 +63,7 @@ class Centre extends Entity
         'coordenades_geo_x' => true,
         'coordenades_geo_y' => true,
         'email_centre' => true,
+        
         'naturalesa' => true,
         'titularitat' => true,
         'municipi' => true,

@@ -14,6 +14,8 @@ use Cake\Datasource\Exception\RecordNotFoundException;
 /**
  * Naturaleses Model
  *
+ * @property \App\Model\Table\CentresTable&\Cake\ORM\Association\HasMany $Centres
+ * 
  * @method \App\Model\Entity\Naturalesa newEmptyEntity()
  * @method \App\Model\Entity\Naturalesa newEntity(array $data, array $options = [])
  * @method \App\Model\Entity\Naturalesa[] newEntities(array $data, array $options = [])
@@ -40,6 +42,8 @@ class NaturalesesTable extends Table
     {
         parent::initialize($config);
 
+        $this->setEntityClass('App\Model\Entity\Naturalesa');
+
         $this->setTable('naturaleses');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
@@ -47,8 +51,6 @@ class NaturalesesTable extends Table
         $this->hasMany('Centres', [
             'foreignKey' => 'naturalesa_id',
         ]);
-
-        $this->setEntityClass('App\Model\Entity\Naturalesa');
     }
 
     /**

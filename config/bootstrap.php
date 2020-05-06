@@ -44,6 +44,8 @@ use Cake\Mailer\TransportFactory;
 use Cake\Routing\Router;
 use Cake\Utility\Security;
 
+use Cake\Utility\Inflector;
+
 /*
  * See https://github.com/josegonzalez/php-dotenv for API details.
  *
@@ -213,3 +215,5 @@ ServerRequest::addDetector('tablet', function ($request) {
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
+
+Inflector::rules('irregular', ['naturalesa' => 'naturaleses']); // The key is singular form, value is plural form

@@ -45,15 +45,15 @@
                     <!--<td><?= $this->Number->format($centre->id) ?></td>-->
                     <td><?= h($centre->codi) ?></td>
                     <td><?= $this->Html->link(h($centre->denominacio_completa), ['action' => 'view', $centre->id]) ?></td>
-                    <td><?= $centre->has('naturalesa') ? $this->Html->link($centre->naturalesa->nom, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalesa->id]) : '' ?></td>
-                    <td><?= $centre->has('titularitat') ? $this->Html->link($centre->titularitat->nom, ['controller' => 'Titularitats', 'action' => 'view', $centre->titularitat->id]) : '' ?></td>
+                    <td><?= $centre->has('naturalesa') ? $this->Html->link($centre->naturalesa->nom, ['controller' => 'Naturaleses', 'action' => 'view', $centre->naturalesa->id]) : '--' ?></td>
+                    <td><?= $centre->has('titularitat') ? $this->Html->link($centre->titularitat->nom, ['controller' => 'Titularitats', 'action' => 'view', $centre->titularitat->id]) : '--' ?></td>
                     <td><?= h($centre->adreca) ?></td>
                     <td><?= h($centre->codi_postal) ?></td>
                     <td><?= h($centre->telefon) ?></td>
                     <td><?= h($centre->fax) ?></td>
-                    <td><?= $centre->has('municipi') ? $this->Html->link($centre->municipi->nom, ['controller' => 'Municipis', 'action' => 'view', $centre->municipi->id]) : '' ?></td>
-                    <td><?= $centre->has('districte') ? $this->Html->link($centre->districte->nom, ['controller' => 'Districtes', 'action' => 'view', $centre->districte->id]) : '' ?></td>
-                    <td><?= $centre->has('localitat') ? $this->Html->link($centre->localitat->nom, ['controller' => 'Localitats', 'action' => 'view', $centre->localitat->id]) : '' ?></td>
+                    <td><?= $centre->has('municipi') ? $this->Html->link($centre->municipi->nom, ['controller' => 'Municipis', 'action' => 'view', $centre->municipi->id]) : '--' ?></td>
+                    <td><?= $centre->has('districte') ? $this->Html->link($centre->districte->nom, ['controller' => 'Districtes', 'action' => 'view', $centre->districte->id]) : '--' ?></td>
+                    <td><?= $centre->has('localitat') ? $this->Html->link($centre->localitat->nom, ['controller' => 'Localitats', 'action' => 'view', $centre->localitat->id]) : '--' ?></td>
                     <td><?= h($centre->zona_educativa) ?></td>
                     <!--
                     <td><?= $this->Number->format($centre->coordenades_utm_x) ?></td>
