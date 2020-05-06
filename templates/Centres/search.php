@@ -15,6 +15,7 @@
         <div class="centres form content">
             <?= $this->Form->create() ?>
             <fieldset>
+            <legend><?= __('Search Centre') ?></legend>
             <?php
                 echo $this->Form->control('codi');
                 echo $this->Form->control('denominacio_completa');

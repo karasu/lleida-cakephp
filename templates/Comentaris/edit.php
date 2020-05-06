@@ -23,7 +23,8 @@
                 <legend><?= __('Edit Comentari') ?></legend>
                 <?php
                     echo $this->Form->control('centre_id', ['options' => $centres]);
-                    echo $this->Form->control('timestamp');
+                    //echo $this->Form->control('created');
+                    //echo $this->Form->control('modified');
                     echo $this->Form->control('text');
                 ?>
             </fieldset>

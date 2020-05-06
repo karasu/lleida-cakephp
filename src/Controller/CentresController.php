@@ -35,8 +35,9 @@ class CentresController extends AppController
         else {
             $centres = $this->paginate($this->Centres);
         }
-
+        
         $this->set(compact('centres'));
+        $this->set('searchFilter', $searchFilter);
     }
 
     /**
@@ -72,12 +73,12 @@ class CentresController extends AppController
             }
             $this->Flash->error(__('The centre could not be saved. Please, try again.'));
         }
-        $naturaleses = $this->Centres->Naturaleses->find('list', ['limit' => 200]);
-        $titularitats = $this->Centres->Titularitats->find('list', ['limit' => 200]);
-        $municipis = $this->Centres->Municipis->find('list', ['limit' => 200]);
-        $districtes = $this->Centres->Districtes->find('list', ['limit' => 200]);
-        $localitats = $this->Centres->Localitats->find('list', ['limit' => 200]);
-        $estudis = $this->Centres->Estudis->find('list', ['limit' => 200]);
+        $naturaleses = $this->Centres->Naturaleses->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $titularitats = $this->Centres->Titularitats->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $municipis = $this->Centres->Municipis->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $districtes = $this->Centres->Districtes->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $localitats = $this->Centres->Localitats->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $estudis = $this->Centres->Estudis->find('list', ['limit' => 200, 'valueField' => 'nom']);
         $this->set(compact('centre', 'naturaleses', 'titularitats', 'municipis', 'districtes', 'localitats', 'estudis'));
     }
 
@@ -102,11 +103,11 @@ class CentresController extends AppController
             }
             $this->Flash->error(__('The centre could not be saved. Please, try again.'));
         }
-        $naturaleses = $this->Centres->Naturaleses->find('list', ['limit' => 200]);
-        $titularitats = $this->Centres->Titularitats->find('list', ['limit' => 200]);
-        $municipis = $this->Centres->Municipis->find('list', ['limit' => 200]);
-        $districtes = $this->Centres->Districtes->find('list', ['limit' => 200]);
-        $localitats = $this->Centres->Localitats->find('list', ['limit' => 200]);
+        $naturaleses = $this->Centres->Naturaleses->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $titularitats = $this->Centres->Titularitats->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $municipis = $this->Centres->Municipis->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $districtes = $this->Centres->Districtes->find('list', ['limit' => 200, 'valueField' => 'nom']);
+        $localitats = $this->Centres->Localitats->find('list', ['limit' => 200, 'valueField' => 'nom']);
         $estudis = $this->Centres->Estudis->find('list', ['limit' => 200]);
         $this->set(compact('centre', 'naturaleses', 'titularitats', 'municipis', 'districtes', 'localitats', 'estudis'));
     }

@@ -47,6 +47,8 @@ class ComentarisTable extends Table
             'foreignKey' => 'centre_id',
             'joinType' => 'INNER',
         ]);
+
+        $this->addBehavior('Timestamp');
     }
 
     /**
@@ -60,11 +62,6 @@ class ComentarisTable extends Table
         $validator
             ->integer('id')
             ->allowEmptyString('id', null, 'create');
-
-        $validator
-            ->dateTime('timestamp')
-            ->requirePresence('timestamp', 'create')
-            ->notEmptyDateTime('timestamp');
 
         $validator
             ->scalar('text')

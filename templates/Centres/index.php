@@ -6,8 +6,13 @@
 ?>
 <div class="centres index content">
     <div class="float-right">
-        <?= $this->Html->link(__('Cerca'), ['action' => 'search'], ['class' => 'button']) ?>
-        <?= $this->Html->link(__('Elimina els filtres de cerca'), ['action' => 'removeSearchFilter'], ['class' => 'button button-outline']) ?>
+
+        <?php if (empty($searchFilter)): ?>
+            <?= $this->Html->link(__('Cerca'), ['action' => 'search'], ['class' => 'button']) ?>
+        <?php else: ?>
+            <?= $this->Html->link(__('Elimina els filtres de cerca'), ['action' => 'removeSearchFilter'], ['class' => 'button button-outline']) ?>
+        <?php endif; ?>
+
         <?= $this->Html->link(__('Afegeix Centre'), ['action' => 'add'], ['class' => 'button button-outline']) ?>
         <?= $this->Html->link(__('Importa CSV'), ['action' => 'import'], ['class' => 'button button-outline']) ?>
     </div>

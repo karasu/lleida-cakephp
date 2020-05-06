@@ -10,7 +10,8 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property int $centre_id
- * @property \Cake\I18n\FrozenTime $timestamp
+ * @property \Cake\I18n\FrozenTime $created
+ * @property \Cake\I18n\FrozenTime $modified
  * @property string $text
  *
  * @property \App\Model\Entity\Centre $centre
@@ -28,7 +29,8 @@ class Comentari extends Entity
      */
     protected $_accessible = [
         'centre_id' => true,
-        'timestamp' => true,
+        'created' => true,
+        'modified' => true,
         'text' => true,
         'centre' => true,
     ];

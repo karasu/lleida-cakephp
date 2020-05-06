@@ -18,7 +18,7 @@
                 <legend><?= __('Add Comentari') ?></legend>
                 <?php
                     echo $this->Form->control('centre_id', ['options' => $centres]);
-                    echo $this->Form->control('timestamp');
+                    //echo $this->Form->control('timestamp');
                     echo $this->Form->control('text');
                 ?>
             </fieldset>

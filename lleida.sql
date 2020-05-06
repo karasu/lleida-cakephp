@@ -96,7 +96,8 @@ CREATE TABLE centres (
 CREATE TABLE comentaris (
     id INT AUTO_INCREMENT PRIMARY KEY,
     centre_id INT NOT NULL,
-    timestamp DATETIME NOT NULL,
+    created DATETIME NOT NULL,
+    modified DATETIME NOT NULL,
     text TEXT NOT NULL,
     FOREIGN KEY centres_key (centre_id) REFERENCES centres(id)
 ) CHARSET=utf8mb4;

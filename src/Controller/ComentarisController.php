@@ -59,7 +59,11 @@ class ComentarisController extends AppController
             }
             $this->Flash->error(__('The comentari could not be saved. Please, try again.'));
         }
-        $centres = $this->Comentaris->Centres->find('list', ['limit' => 200]);
+        // $centres = $this->Comentaris->Centres->find('list', ['limit' => 200]);
+        $centres = $this->Comentaris->Centres->find('list', [
+            'valueField' => 'denominacio_completa',
+            'order' => ['Centres.denominacio_completa' => 'ASC']
+        ]);
         $this->set(compact('comentari', 'centres'));
     }
 

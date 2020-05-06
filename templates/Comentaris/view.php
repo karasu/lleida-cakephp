@@ -20,15 +20,19 @@
             <table>
                 <tr>
                     <th><?= __('Centre') ?></th>
-                    <td><?= $comentari->has('centre') ? $this->Html->link($comentari->centre->id, ['controller' => 'Centres', 'action' => 'view', $comentari->centre->id]) : '' ?></td>
+                    <td><?= $comentari->has('centre') ? $this->Html->link($comentari->centre->denominacio_completa, ['controller' => 'Centres', 'action' => 'view', $comentari->centre->id]) : '' ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Id') ?></th>
                     <td><?= $this->Number->format($comentari->id) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Timestamp') ?></th>
-                    <td><?= h($comentari->timestamp) ?></td>
+                    <th><?= __('Created') ?></th>
+                    <td><?= h($comentari->created) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('Modified') ?></th>
+                    <td><?= h($comentari->modified) ?></td>
                 </tr>
             </table>
             <div class="text">

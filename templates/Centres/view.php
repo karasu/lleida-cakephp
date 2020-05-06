@@ -74,11 +74,11 @@
                     <th><?= __('Email Centre') ?></th>
                     <td><?= h($centre->email_centre) ?></td>
                 </tr>
+                <!--
                 <tr>
                     <th><?= __('Id') ?></th>
                     <td><?= $this->Number->format($centre->id) ?></td>
                 </tr>
-                <!--
                 <tr>
                     <th><?= __('Coord Utm X') ?></th>
                     <td><?= $this->Number->format($centre->coordenades_utm_x) ?></td>

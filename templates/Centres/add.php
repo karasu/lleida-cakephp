@@ -19,13 +19,16 @@
                 <?php
                     echo $this->Form->control('codi');
                     echo $this->Form->control('denominacio_completa');
-                    echo $this->Form->control('naturalesa_id', ['options' => $naturaleses]);
-                    echo $this->Form->control('titularitat_id', ['options' => $titularitats]);
+                    //echo $this->Form->control('naturalesa_id', ['options' => $naturaleses]);
+                    //echo $this->Form->control('titularitat_id', ['options' => $titularitats]);
+                    echo $this->Form->control('naturalesa_id', ['options' => $naturaleses, 'empty' => true, 'label' => __('Naturalesa')]);
+                    echo $this->Form->control('titularitat_id', ['options' => $titularitats, 'empty' => true]);
+    
                     echo $this->Form->control('adreca');
                     echo $this->Form->control('codi_postal');
                     echo $this->Form->control('telefon');
                     echo $this->Form->control('fax');
-                    echo $this->Form->control('municipi_id', ['options' => $municipis]);
+                    echo $this->Form->control('municipi_id', ['options' => $municipis, 'empty' => true]);
                     echo $this->Form->control('districte_id', ['options' => $districtes, 'empty' => true]);
                     echo $this->Form->control('localitat_id', ['options' => $localitats, 'empty' => true]);
                     echo $this->Form->control('zona_educativa');
@@ -34,7 +37,7 @@
                     echo $this->Form->control('coordenades_geo_x');
                     echo $this->Form->control('coordenades_geo_y');
                     echo $this->Form->control('email_centre');
-                    echo $this->Form->control('estudis._ids', ['options' => $estudis]);
+                    echo $this->Form->control('estudis._ids', ['options' => $estudis, 'style' => 'height:200px;']);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>
